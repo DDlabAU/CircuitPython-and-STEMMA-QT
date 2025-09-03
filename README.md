@@ -2,15 +2,15 @@
 Overblik over boards og komponenter, som er understøttet af CircuitPython. Både med StemmaQT forbindelse, men også nogle vigtige og fede som er lidt mere komplicerede!
 # Boards
 
-![Boards](boards.jpg)
+<img src="boards.jpg" alt="boards" width="300"/>
 Læs om vores udvalg af forskellige boards der understøtter circuit python og STEMMA QT forbindelsen.
 
 # STEMMA QT komponenter
 Næsten plug-n-play med disse geniale komponenter, som har indbyggede modstande, og kan kædes sammen. 1 kabel er alt du skal bruge!
 
-![StemmaQt](stemmaqt.jpg)
+<img src="stemmaqt.jpg" alt="StemmaQt" width="300"/>
 
 # Andre komponenter
 Andre komponenter der bruger 2,3,5,10 eller flere ledninger. De fleste er stadig nemme at bruge, og der er mange gode guide at finde herinde, så ikke lad jer skræmme. Der er virkeligt nogle fede ting herinde der kan være prikken over I'et på jeres projekt.
 
-![StemmaQt](other.jpg)
+<img src="other.jpg" alt="other" width="300"/>
