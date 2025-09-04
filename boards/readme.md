@@ -44,4 +44,25 @@ Vælg den med PSRAM hvis dit projekt kræver mere hukommelse til store datasæt,
 
 
 
-## Adalogger ESP32
+## Adalogger RP2040 Feather
+RP2040 chip med **microSD** slot
+
+- MicroSD slot til data logging
+- Nemt at tilslutte batteri
+- Ikke helt ligeså "avanceret" chip som de andre boards
+- men stadig en god chip der er MANGE GANGE hurtigere end arduino uno's chip
+- 8 MB Flash
+- Arduino / CircuitPython Kompatibel
+- STEMMA QT forbindelse
+- Mange indgange
+- Lavt strømforbrug
+- Ingen bluetooth eller wifi
+
+
+
+
+<img src="https://cdn-shop.adafruit.com/970x728/5980-00.jpg" alt="Adalogger RP2040" width="300"/>  
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-feather-rp2040-adalogger)  
+- [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/adafruit_feather_rp2040_adalogger/)
+- [Eksempelkode: Gem på SD](https://learn.adafruit.com/adafruit-feather-rp2040-adalogger/sd-card#sd-card-write-test-3153417)
