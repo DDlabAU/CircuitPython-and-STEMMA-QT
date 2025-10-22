@@ -82,6 +82,7 @@ Mål bevægelse(acceleration), orientering, og taps
 ##### Type: INPUT
 
 Tilføj brugerinput i form af tryk og rotation på hjulet. Denne RE, har også en neopixel led
+
 <img src="https://cdn-shop.adafruit.com/970x728/4991-09.jpg" alt="QT Py S3" width="200"/>
 
 
