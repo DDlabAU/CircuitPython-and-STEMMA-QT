@@ -1,3 +1,19 @@
+### Hop til komponent (klik)
+**INPUT**
+- [i1 — Temperatur & luftfugtighed](#i1)
+- [i2 — Temperatur & barometer/altimeter](#i2)
+- [i3 — Luftkvalitet](#i3)
+- [i4 — Lys + Afstand](#i4)
+- [i5 — Accelerometer](#i5)
+- [i6 — Rotary Encoder](#i6)
+- [i7 — Gamepad](#i7)
+- [i8 — Real Time Clock](#i8)
+- [i9 — Svagstrøms-sensor](#i9)
+- [i10 — 9-axis orientation](#i10)
+
+**OUTPUT**
+
+<a id="i1"></a>
 # Temperatur- og luftfugtigheds sensor
 *ID: i1*
 ##### Type: INPUT
@@ -12,7 +28,7 @@ Mål temperatur og luftfugtighed
 - [Eksempelkode](https://learn.adafruit.com/adafruit-aht20/python-circuitpython#full-example-code-3064504)
 
 ---
-
+<a id="i2"></a>
 # Temperatur og barometer/altimeter
 *ID: i2*
 ##### Type: INPUT
@@ -28,6 +44,7 @@ Mål temperatur og lufttryk/højde
 
 ---
 
+<a id="i3"></a>
 # Luftkvalitet
 *ID: i3*
 ##### Type: INPUT
@@ -44,6 +61,7 @@ obs. sensoren skal varme op i nogle minutter fra den tændes. Det gør den af si
 
 ---
 
+<a id="i4"></a>
 # Lys + Afstand
 *ID: i4*
 ##### Type: INPUT
@@ -61,6 +79,7 @@ Mål lysmængde og afstand til objekt foran senso.
 ---
 
 
+<a id="i5"></a>
 # Accelerometer
 *ID: i5*
 ##### Type: INPUT
@@ -77,6 +96,7 @@ Mål bevægelse(acceleration), orientering, og taps
 
 ---
 
+<a id="i6"></a>
 # Rotary Encoder
 *ID: i6*
 ##### Type: INPUT
@@ -93,6 +113,7 @@ Tilføj brugerinput i form af tryk og rotation på hjulet. Denne RE, har også e
 
 ---
 
+<a id="i7"></a>
 # Gamepad
 *ID: i7*
 ##### Type: INPUT
@@ -109,6 +130,7 @@ lille spil-kontroller med a,b,x,y,start,select-knapper og en gamepad. kan fx map
 
 ---
 
+<a id="i8"></a>
 # Real Time Clock
 *ID: i8*
 ##### Type: INPUT
@@ -125,10 +147,8 @@ Brug eksempelkoden til at indstille tiden. Med batteri i, kan denne rtc nu huske
 
 ---
 
-# Svagstrøms-sensor
-*ID: i9*
-##### Type: INPUT
-
+<a id="i9"></a>
+#
 Strømmåler, måler spænding og strøm. Vigtigt: kun til svagstrøm: MAX 26V og max +/- 3.2A
 Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og sende data over wifi.
 
@@ -142,6 +162,7 @@ Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og s
 
 ---
 
+<a id="i10"></a>
 # 9-axis orientation
 *ID: i10*
 ##### Type: INPUT
