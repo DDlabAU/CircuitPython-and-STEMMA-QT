@@ -12,6 +12,108 @@
 - [i10 — 9-axis orientation](#i10)
 
 **OUTPUT**
+- [o1 — LED Matrix](#o1)
+- [o2 — Vibration Driver](#o2)
+- [o3 — Servo Motor](#o3)
+- [o4 — DC Motor](#o4)
+- [o5 — Buzzer](#o5)
+- [o6 — Relay](#o6)
+
+# OUTPUT
+
+<a id="o1"></a>
+# LED Matrix 13*9 neopixels
+*ID: o1*
+##### Type: OUTPUT
+
+Vis mønstre, ikoner, bogstaver, tal og animationer med en LED matrix.
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/104/458/large1024/adafruit_products_IS31_top_angle.jpg?1631304413" alt="LED Matrix" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-is31fl3741)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-is31fl3741/python-circuitpython#basic-example-code-3102692)
+
+---
+
+<a id="o2"></a>
+# Haptic Motor Controller / Vibration Controller
+*ID: o2*
+##### Type: OUTPUT
+
+styr en vibrationsmotor, tænd/sluk og vælg en af 123 indbyggede vibrationsmønstre
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/113/378/medium800thumb/adafruit_products_2305-05_1.jpg?1658412986" alt="OLED Display" width="200"/>
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/072/594/large1024/adafruit_products_DRV_Waveforms.png?1552347698" alt="patterns" height="400">
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/overview)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/python-circuitpython#full-example-code-2998876)
+
+---
+
+<a id="o3"></a>
+# Servo Motor
+*ID: o3*
+##### Type: OUTPUT
+
+Styr bevægelser med en servo motor.
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/124/012/large1024/servo_motor.jpg" alt="Servo Motor" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/servo-motor-guide)
+
+- [Eksempelkode](https://learn.adafruit.com/servo-motor-guide/python-circuitpython#example-code)
+
+---
+
+<a id="o4"></a>
+# DC Motor
+*ID: o4*
+##### Type: OUTPUT
+
+Styr rotation med en DC motor.
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/124/345/large1024/dc_motor.jpg" alt="DC Motor" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/dc-motor-guide)
+
+- [Eksempelkode](https://learn.adafruit.com/dc-motor-guide/python-circuitpython#example-code)
+
+---
+
+<a id="o5"></a>
+# Buzzer
+*ID: o5*
+##### Type: OUTPUT
+
+Afspil lyde og toner med en buzzer.
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/124/678/large1024/buzzer.jpg" alt="Buzzer" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/buzzer-guide)
+
+- [Eksempelkode](https://learn.adafruit.com/buzzer-guide/python-circuitpython#example-code)
+
+---
+
+<a id="o6"></a>
+# Relay
+*ID: o6*
+##### Type: OUTPUT
+
+Styr højstrømsenheder med et relæ.
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/124/901/large1024/relay.jpg" alt="Relay" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/relay-guide)
+
+- [Eksempelkode](https://learn.adafruit.com/relay-guide/python-circuitpython#example-code)
+
+---
+
+# INPUT
 
 <a id="i1"></a>
 # Temperatur- og luftfugtigheds sensor
@@ -163,7 +265,7 @@ Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og s
 ---
 
 <a id="i10"></a>
-# 9-axis orientation
+# Ni-akse orientering
 *ID: i10*
 ##### Type: INPUT
 
