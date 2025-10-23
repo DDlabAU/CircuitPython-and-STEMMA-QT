@@ -124,3 +124,39 @@ Brug eksempelkoden til at indstille tiden. Med batteri i, kan denne rtc nu huske
 
 
 ---
+
+# Svagstrøms-sensor
+*ID: i9*
+##### Type: INPUT
+
+Strømmåler, måler spænding og strøm. Vigtigt: kun til svagstrøm: MAX 26V og max +/- 3.2A
+Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og sende data over wifi.
+
+<img src="https://cdn-shop.adafruit.com/970x728/904-09.jpg" alt="QT Py S3" width="200"/>
+
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/python-circuitpython#full-example-code-2997919)
+
+
+---
+
+# 9-axis orientation
+*ID: i10*
+##### Type: INPUT
+
+*OBS: vi har ikke stemmaQT-udgaven, derfor skal du selv sætte 4 ledninger i 3v, gnd, sda, og scl.*
+
+Et standard accelerometer er god til mange ting, særligt at registere ryst, orientering, taps og andre basisbevægelser.
+Denne sensor kan meget mere, da den også har magnetometer og gyroskop, kan du bruge den som kompas, og altid få din præcise orientering. Til projekter der kræver lidt mere en blot et simpelt accelerometer.
+ 
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/024/585/large1024/sensors_2472_top_ORIG.jpg?1429638074" alt="QT Py S3" width="200"/>
+
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython#full-example-code-2998132)
+
+
+---
