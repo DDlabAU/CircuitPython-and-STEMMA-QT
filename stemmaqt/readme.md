@@ -54,17 +54,21 @@ styr en vibrationsmotor, tænd/sluk og vælg en af 123 indbyggede vibrationsmøn
 ---
 
 <a id="o3"></a>
-# Servo Motor
+# Grayscale 1.5" OLED Skærm
 *ID: o3*
 ##### Type: OUTPUT
 
-Styr bevægelser med en servo motor.
+Lille god skærm som dog kun kan vise sorte, hvide og grå nuancer.
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/124/012/large1024/servo_motor.jpg" alt="Servo Motor" width="200"/>
+Det kræver en lille effort at sætte sig ind i hvordan man laver GUI på skærmen, men guiden er god til at forklare, og det er ikke super svært!
 
-- [Officiel Guide](https://learn.adafruit.com/servo-motor-guide)
 
-- [Eksempelkode](https://learn.adafruit.com/servo-motor-guide/python-circuitpython#example-code)
+
+<img src="https://cdn-shop.adafruit.com/970x728/4741-07.jpg" alt="Servo Motor" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-grayscale-1-5-128x128-oled-display)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-grayscale-1-5-128x128-oled-display/circuitpython-wiring-and-usage#example-code-3076925)
 
 ---
 
@@ -281,5 +285,21 @@ Denne sensor kan meget mere, da den også har magnetometer og gyroskop, kan du b
 
 - [Eksempelkode](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython#full-example-code-2998132)
 
+
+---
+
+<a id="i11"></a>
+# Wii Nunchuck + Adapter
+*ID: i11*
+##### Type: INPUT
+
+Med dette kan du nemt styre din prototype. controlleren har 2 knappper, et joystick og et indbygget accelerometer, så du også kan fx ryste controlleren for at gøre noget. Meget nem og fed at bruge! 
+ 
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/098/517/medium800thumb/adafruit_products_4836-1.jpg?1610300614" alt="QT Py S3" width="200"/>
+
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-wii-nunchuck-breakout-adapter)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-wii-nunchuck-breakout-adapter/python-circuitpython#full-example-code-3079120)
 
 ---

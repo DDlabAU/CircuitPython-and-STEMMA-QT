@@ -1,4 +1,7 @@
 ## QT Py S3
+
+*ID: b1*
+
 Den vilde ESP32-S3 chip på et meget lille board:
 - WiFi
 - Bluetooth
@@ -18,6 +21,8 @@ Den vilde ESP32-S3 chip på et meget lille board:
 
 
 ## Feather S3
+*ID: b2*
+
 ESP32-S3 chippen i "feather" format:
 - Wifi
 - Bluetooth
@@ -45,6 +50,9 @@ Vælg den med PSRAM hvis dit projekt kræver mere hukommelse til store datasæt,
 
 
 ## Adalogger RP2040 Feather
+
+*ID: b3*
+
 RP2040 chip med **microSD** slot
 
 - MicroSD slot til data logging
