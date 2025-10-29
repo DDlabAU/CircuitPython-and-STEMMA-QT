@@ -73,32 +73,93 @@ Det kræver en lille effort at sætte sig ind i hvordan man laver GUI på skærm
 ---
 
 <a id="o4"></a>
-# DC Motor
+# 7-segment-display
 *ID: o4*
 ##### Type: OUTPUT
 
-Styr rotation med en DC motor.
+Simpel skærm med 4-tal eller bogstaver (bedst til tal)
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/124/345/large1024/dc_motor.jpg" alt="DC Motor" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/880-05.jpg" alt="7-seg-display" width="200"/>
 
-- [Officiel Guide](https://learn.adafruit.com/dc-motor-guide)
+- [Officiel Guide](https://learn.adafruit.com/adafruit-led-backpack/0-dot-56-seven-segment-backpack)
 
-- [Eksempelkode](https://learn.adafruit.com/dc-motor-guide/python-circuitpython#example-code)
+- [Eksempelkode*](https://learn.adafruit.com/adafruit-led-backpack/0-dot-56-seven-segment-backpack-circuitpython-and-python-usage#initialization-3054480) 
+
+*man skal selv sammensætte de dele af eksempelkoden man vil bruge
 
 ---
 
 <a id="o5"></a>
-# Buzzer
+# NFC link/text sender
 *ID: o5*
 ##### Type: OUTPUT
 
-Afspil lyde og toner med en buzzer.
+Tilføj tekst eller et web-link, og når en telefon kommer tæt på chippen, vil den åbne websiden eller vise teksten.
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/124/678/large1024/buzzer.jpg" alt="Buzzer" width="200"/>
+Desværre findes der ikke et officielt CircuitPython-bibliotek til denne sensor, så det er mere kompliceret at bruge den. Du kan dog følge min step-by-step guide her, som viser, hvordan du får den til at fungere.
 
-- [Officiel Guide](https://learn.adafruit.com/buzzer-guide)
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/093/887/large1024/adafruit_products_ST25DV16_top_angle.jpg?1596751982" alt="NFC" width="200"/>
 
-- [Eksempelkode](https://learn.adafruit.com/buzzer-guide/python-circuitpython#example-code)
+- [Officiel Guide](https://learn.adafruit.com/adafruit-st25dv16k-i2c-rfic-eeprom-breakout/overview)
+
+<details>
+<summary>Step-by-step: Brug af RFID-læser med CircuitPython</summary>
+
+1. **Gå til GitHub**  
+    Besøg følgende GitHub-repo: [Neradoc/circuitpython-st25dv](https://github.com/Neradoc/circuitpython-st25dv/tree/main)
+
+2. **Download ZIP**  
+    Klik på **Code** -> **Download ZIP**.
+
+3. **Udpak ZIP-filen**  
+    Udpak ZIP-filen et vilkårligt sted på din computer.
+
+4. **Kopier nødvendige filer**  
+    find filerne `rfid_payload.py` og `adafruit_st25dv16.py` og kopier dem til **lib**-mappen på dit CircuitPython-board.
+
+5. **Tilføj biblioteker**  
+    Sørg for at tilføje de nødvendige biblioteker, fx med **circup**. Husk også at importere `adafruit_24lc32`, da det bruges indirekte.
+
+6. **Eksempelkode**  
+    Brug følgende kode. Hvis du er forbundet med STEMMA QT, skal du ikke ændre opsætningen. Vælg enten linje X eller Y, og udkommenter den linje, du ikke bruger.
+
+```python
+# Importer de relevante libs
+import board
+import time
+import adafruit_st25dv16
+import rfid_payload
+import adafruit_24lc32
+
+# STEMMA QT forbindelse
+i2c = board.STEMMA_I2C()
+eeprom = adafruit_st25dv16.ST25DV16(i2c, 0x53)
+
+# "Linje X" Vælg denne linje for LINK
+data = rfid_payload.payload_url("https://www.youtube.com/watch?v=Kx-Mnm_FCI8")
+
+# "Linje Y" Vælg denne linje for TEKST
+# data = rfid_payload.payload_text("Dette er en besked \n dette er en ny linje")
+
+# Udkommenter den linje, du ikke bruger
+
+# Koden skriver indholdet til chippen (ændr ikke dette)
+for i in range(len(data)):
+     eeprom[i] = data[i]
+     time.sleep(0.01)
+```
+
+7. **Arduino for avancerede funktioner**  
+    Hvis du ønsker at udnytte flere funktioner på denne RFID-læser, skal du desværre bruge Arduino.
+</details>
+    
+
+
+
+
+
+
+
 
 ---
 
