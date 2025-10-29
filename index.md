@@ -18,7 +18,7 @@ Andre komponenter der bruger 2,3,5,10 eller flere ledninger. De fleste er stadig
 
 <a href="other"><img src="other.jpg" alt="Boards" style="cursor:pointer;" width="200"></a>
 
-# [Andre komponenter](other)
+# [Avancerede teknologier](advanced)
 Wifi, bluetooth, api mm. Virkeligt fedt, men kræver opsætning og tid.
 
 <a href="advanced"><img src="advanced.png" alt="advanced" style="cursor:pointer;" width="200"></a>
