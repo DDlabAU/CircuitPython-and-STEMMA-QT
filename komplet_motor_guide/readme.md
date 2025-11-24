@@ -1,124 +1,92 @@
-# WiFi
+# Servo 180°
+#### Key feature:
+Kan indstilles til vinkler f.eks. 30° eller 80°. Det gør at den kan bruges til at pege specifikke steder hen. kan også bruges til at skubbe, åbne, låse eller til robotter. En meget alsidig og billig motor. Søg på nettet og se hvad andre har brugt den til før.
 
-Adafruit.io gør det nemt at integrere WiFi-projekter med dit CircuitPython-board. Du kan fjernstyre dit board, sende data fra board til din computer, eller lade to boards kommunikere. Se vores links til tutorials og projekteksempler for at komme i gang!
+Ulempen er at den kun har et range of motion på 180° og kan ikke gå over 180° uden at gå i stykker.
 
-### Snyde WiFi-projekt (Ingen kode nødvendig) :D
-Dette er den nemmeste måde at lave et simpelt WiFi-projekt på, selvom det har mange begrænsninger og ikke kræver kodning:
-- [Videotutorial](https://www.youtube.com/watch?v=beFuT_hG_LE)
-- [Trin-for-trin-guide](https://learn.adafruit.com/quickstart-adafruit-io-wippersnapper?view=all#installing-wippersnapper)
+- 5V
+- Kan fungere uden ekstern strøm, men hvis der er mere end én tilsluttet, skal der ekstern strømforsyning til
+- 3 ledninger: rød til 5V strøm, sort til GND, hvid til signal fx "A1"
 
-### Send data/kommando **til** dit board
-Lær hvordan du styrer output via WiFi:
-- [Opsætning og simpel tænd/sluk](https://www.youtube.com/watch?v=iFwvvEJ_UwA&list=PLBJJ76R_ry5QY9BU5gqxrvtODWFkkTjYa&index=35&t=1449s)
+(hvis du bruger ekstern strømforsyning er det vigtigt at motorens sorte ledning går BÅDE til ekstern GND og board GND)
 
-- [Fortsættelse af ovenstående video med mere avanceret funktionalitet](https://www.youtube.com/watch?v=fjysAa3N2OI&list=PLBJJ76R_ry5QY9BU5gqxrvtODWFkkTjYa&index=36)
+# Servo continous
+#### Key feature:
+Virker lidt som en 180° servo, og larmer ligeså meget, men den kan IKKE indstilles til vinkler, derfor er den ikke så præcis. Den skal indstilles til tid+retning. "drej til højre i 2 sekunder" fx.
+Fordelen er at den kan dreje uendige
 
+Ikke ligeså alsidig, men nem at bruge og kan dreje 360 grader.
 
-<details>
-<summary>Kodeeksempel: Styring af NeoPixel-strip med Adafruit IO</summary>
+- 5V
+- Kan fungere uden ekstern strøm, men hvis der er mere end én tilsluttet, skal der ekstern strømforsyning til
+- 3 ledninger: rød til 5V strøm, sort til GND, hvid til signal fx "A1"
 
-```python
-import board, time, neopixel
-import os, ssl, socketpool, wifi
-import adafruit_minimqtt.adafruit_minimqtt as MQTT
+(hvis du bruger ekstern strømforsyning er det vigtigt at motorens sorte ledning går BÅDE til ekstern GND og board GND)
 
-# Opsætning af NeoPixel-strip
-strip = neopixel.NeoPixel(board.A1, 30)
-RED = (255, 0, 0)
-BLACK = (0, 0, 0)
-strip.fill(BLACK)
+# Simple dc motor
+#### Key feature:
+Meget hurtigt-drejende, meget svag motor. God til f.eks. en blæser. Lydlød. Der er kun 2 ledninger så den ene skal i gnd, og den anden i signal. Man kan enten bare tænde/slukke for den, men hvis man gerne vil kontrollere hastigheden kan man bruge PWM (pulse width modulation).
 
-# Hent Adafruit IO-brugernavn og nøgle fra settings.toml
-aio_username = os.getenv("AIO_USERNAME")
-aio_key = os.getenv("AIO_KEY")
+- 5V
+- Benyt en mosfet driver: http://adafru.it/5648
+- indsæt motorens 2 ledninger i den.
+- driveren har 3 ledninger. den hvide skal i board signal, f.eks. a1.
+- den røde skal til ekstern strøm IND
+- den sorte skal BÅDE til ekstern strøm GND og board GND
 
-# Opsæt en feed til at abonnere på
-strip_on_off_feed = aio_username + "/feeds/Strip_on_off"
-strip_colour_change = aio_username + "/feeds/Strip_colour_change"
+# Geared dc motor
+#### Key feature:
+I princippet samme type motor som dc motoren, men der sidder en gearbox der ændrer den 1:48. Den nye rotation der kommer er altså 48 gange langsommere men har 48 gange mere moment (power). Det giver mening hvis man skal bruge den til at trække en lille radiobil fx eller drive et bælte.
 
-# Opsæt funktioner til at reagere på MQTT-hændelser
+ Benyt en mosfet driver: http://adafru.it/5648
+- indsæt motorens 2 ledninger i den.
+- driveren har 3 ledninger. den hvide skal i board signal, f.eks. a1.
+- den røde skal til ekstern strøm IND
+- den sorte skal BÅDE til ekstern strøm GND og board GND
 
-def connected(client, userdate, flags, rc):
-    # Forbundet til broker Adafruit IO
-    print("Forbundet til Adafruit IO! Lytter....")
+# Large Solenoid
+#### Key feature:
+Push/pull solenoid. Når den får strøm skubber den med en solid kraft 2-3 cm fremad. Når strømmen stopper falder den tilbage på plads. I denne form skal man være lidt kreativ for at finde ud af hvad man kan bruge den til. f.eks. kan man tag en xylofon og sætte en solenoid over hver knap, og så kan man skrive kode der får den til at spille sange automatisk. For mere seriøst projekter har vi en solenoid den sidder i et vandrør, som kan åbne og lukke for vandet. eller en lock-style solenoid som kan sættes i døre og skuffer så de er låst indtil du aktiverer den.
 
-    # Abonner på alle ændringer på feeds nedenfor
-    client.subscribe(strip_on_off_feed)
-    client.subscribe(strip_colour_change)
+12v, vær forsigtig. 12v ekstern strøm er nok til at kortslutte sensorer og boards hvis du sætter ledningerne forkert. fejl kan ske, men det er bedre at spørge en gang for meget end en gang for lidt :D
 
-def disconnected(client, userdata, rc):
-    # Afbrudt forbindelse
-    print("Afbrudt fra broker")
+ Benyt en mosfet driver: http://adafru.it/5648
+- indsæt motorens 2 ledninger i den.
+- driveren har 3 ledninger. den hvide skal i board signal, f.eks. a1.
+- den røde skal til ekstern strøm IND
+- den sorte skal BÅDE til ekstern strøm GND og board GND
 
-def message(client, topic, message):
-    # Hoveddelen af din kode til at reagere på MQTT
+# Vibration motor
+#### Key feature:
+Perfekt hvis du vil inkorporere haptisk feedback i et projekt. har over 100 forskellige vibrationsmønstre. Meget nem at bruge.
 
-    print(f"Emne: {topic}, Besked: {message}")
-    if message == "ON":
-        strip.fill(RED)
-        print("ON modtaget")
+Bruger denne driver:
+https://www.adafruit.com/product/2305
+Det eneste du skal er at plugge det ind i boarded med et stemma qt kabel og skrive kode. mega nemt
 
-    elif message == "OFF":
-        strip.fill(BLACK)
+# Stepper motor
+#### Key feature:
+Den mest præcise, alsidige, stærke, hurtige motor vi har. Men også den dyreste og sværeste at bruge. Giver kun mening at bruge den hvis man ved at man skal bruge dens egenskaber. ellers koster en servomotor180° 100x mindre og er 20x nemmere at opsætte. Denne motor sidder i cnc maskiner såsom vores lasercuttere og 3d printere og driver x-y-z akserne, det er den præcision vi snakker! Og de stepppermoterer vi har pt. er modellen nema17 som vi faktisk har pillet ud af vores gamle 3d printere.
 
-    elif message.isdigit():
-        brightness_level = int(message)
-        strip.brightness = brightness_level / 10.0
-        print(f"Modtaget lysstyrkeniveau: {brightness_level}")
+Hvad du skal bruge
+- stepper motor driver
+- lod 4 ledninger fra motoren på driveren
+- ekstern 12v strømforsyning
+- lod strømforsyningen fast på driver boarded de korrekt steder
+- tilslut board til driver, og også lod en ledninger mellem board og driverens "EN" (enable) pin, da det er vigtigt at kontrollere hvornår motoren er tænd og slukket, da den ellers bliver varmere end solens kerne og brænder dit projekt ned.
 
-# Forbind til WiFi
-print("Forbinder til WiFi")
-wifi.radio.connect(os.getenv("WIFI_SSID"), os.getenv("WIFI_PASSWORD"))
-print("Forbundet!")
+bruge denne guide til wiring:
 
-# Opret en socket-pool
-pool = socketpool.SocketPool(wifi.radio)
+https://learn.adafruit.com/adafruit-tmc2209-stepper-motor-driver-breakout-board/circuitpython-and-python 
 
-# Opsæt en MiniMQTT-klient
-mqtt_client = MQTT.MQTT(
-    broker=os.getenv("BROKER"),
-    port=os.getenv("PORT"),
-    username=aio_username,
-    password=aio_key,
-    socket_pool=pool,
-    ssl_context=ssl.create_default_context()
-)
+# Linear actuator
+#### Key feature:
+Der sidder en i den hemmelige skuffe under bordet. det er den eneste vi har da de er meget gamle og skrøbelige og der ikke har været efterspørgsel i MANGE år. Men hvis i skal bruge en, så sig til, så kan vi måske indkøbe nogle nye. 
 
-# Opsæt "callback"-metoderne til MQTT oprettet ovenfor
-mqtt_client.on_connect = connected
-mqtt_client.on_disconnect = disconnected
-mqtt_client.on_message = message
+Det er meget vigtigt ikke kun at tilslutte motorens strøm ind ud ledninger, for motoren kan ikke stopper af sig selv, så hvis man prøver at trække armen ind, mens den allerede er inde, så knækker motoren. Derfor har den et potentiometer indbygget som kan tilsluttet til boarded og så kan man observere om morteren er inde eller ude.
 
-# Forbind til MQTT-broker
-print("Forbinder til Adafruit IO....")
-mqtt_client.connect()
-
-while True:
-    mqtt_client.loop()
-```
-
-</details>
+Vi skriver en mere præcis guide, hvis vi køber flere.
 
 
-<details>
-<summary>settings.toml</summary>
-
-```toml
-# settings.toml
-
-WIFI_SSID = "wifinavn"
-WIFI_PASSWORD = "wifikode"
-AIO_USERNAME = "dit adafruit io brugernavn"
-AIO_KEY = "din aio nøgle"
-BROKER = "io.adafruit.com"
-PORT = 1883
-```
-</details>
-
-
-### Send data/kommando **fra** dit board til din computer/andre boards:
-- [video 1](https://www.youtube.com/watch?v=565lpAIWjJM&list=PL9VJ9OpT-IPSsQUWqQcNrVJqy4LhBjPX2&index=115&t)
-
-- [video 2](https://www.youtube.com/watch?v=UxhCPdK7W38&t)
 
 
