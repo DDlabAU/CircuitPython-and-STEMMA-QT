@@ -17,7 +17,8 @@
 - [o3 — Servo Motor](#o3)
 - [o4 — DC Motor](#o4)
 - [o5 — Buzzer](#o5)
-- [o6 — Relay](#o6)
+- [o6 — LCD-skærm](#o6)
+
 
 # OUTPUT
 
@@ -164,17 +165,17 @@ for i in range(len(data)):
 ---
 
 <a id="o6"></a>
-# Relay
+# LCD-screen
 *ID: o6*
 ##### Type: OUTPUT
 
-Styr højstrømsenheder med et relæ.
+LCD skærm med en såkald "backpack" på der gør den meget nemt at bruge - blot tilslut stemma kab
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/124/901/large1024/relay.jpg" alt="Relay" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/198-05.jpg" alt="Relay" width="200"/>
 
-- [Officiel Guide](https://learn.adafruit.com/relay-guide)
+- [Officiel Guide](https://learn.adafruit.com/i2c-spi-lcd-backpack)
 
-- [Eksempelkode](https://learn.adafruit.com/relay-guide/python-circuitpython#example-code)
+- [Eksempelkode](https://learn.adafruit.com/i2c-spi-lcd-backpack/python-circuitpython#full-example-code-3007416)
 
 ---
 
