@@ -365,3 +365,23 @@ Med dette kan du nemt styre din prototype. controlleren har 2 knappper, et joyst
 - [Eksempelkode](https://learn.adafruit.com/adafruit-wii-nunchuck-breakout-adapter/python-circuitpython#full-example-code-3079120)
 
 ---
+<a id="i+"></a>
+# diverse input
+*ID: i+*
+##### Type: INPUT
+
+### ANO roraty encoder
+fed "controller" til userinput til et deisign
+
+- [Officiel Guide](https://learn.adafruit.com/ano-rotary-encoder)
+
+- [Eksempelkode](https://learn.adafruit.com/ano-rotary-encoder/python-circuitpython)
+
+### Capacitive Touch sensors
+tilslut op til 12 capacitive touch inputs med denne.
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/python-circuitpython#full-example-code-2999017)
+
+---
