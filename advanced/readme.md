@@ -138,6 +138,13 @@ Men denne guide omhandler CircuitPython-brug:
 - Du kan også koble skærme eller lys på der reagerer på strømdata for at informere brugerne.
 - Den kan altså rigtigt meget!
 
+
+
+1. tag et board der har wifi og er circuitpython compatibel (se board guide hvis du er i tvivl)
+2. tilslut shelly plug til stikkontakten og se hvilket wifi der kommer op (vær obs. på at der er flere shellyplugs i denne bygning, så vær sikker på at du tager den rigtige)
+3. brug koderne herunder og modificer efter dine behov
+4. husk at importere lib fx adafruit_requests
+
 <details>
 <summary>Kode til relæ</summary>
 
