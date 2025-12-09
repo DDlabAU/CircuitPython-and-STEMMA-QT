@@ -1,3 +1,21 @@
+### Hop til komponent (klik)
+**Miscellaneous**
+- [m1 — Fingerprint sensor](#m1)
+- [m2 — GPS](#m2)
+- [m3 — Jord fugtighed og temp sensor](#m3)
+- [m4 — Taktil knap](#m4)
+- [m5 — God skærm](#m5)
+- [m6 — Infrafrød transceiver](#m6)
+- [m7 — Mosfet motor driver](#m7)
+- [m8 — Servo motor](#m8)
+- [m9 — dac lyd minijack](#m9)
+- [m10 — dac lyd amp](#m10)
+- [m+ — diverse input](#m+)
+- [m+ — diverse output](#m++)
+
+
+
+
 <a id="m1"></a>
 # Fingerprint sensor
 *ID: m1*
@@ -39,7 +57,7 @@ Den er nem at forbinde, bare følg guiden (4 ledninger i alt):
 
 
 <a id="m3"></a>
-# soil temp+hum sensor
+# Jord fugtighed+temp sensor
 *ID: m3*
 ##### Type: INPUT
 
@@ -58,7 +76,7 @@ forbind med i2c (4 ledninger, nemt)
 
 
 <a id="m4"></a>
-# taktil knap
+# Taktil knap
 *ID: m4*
 ##### Type: INPUT
 
@@ -77,7 +95,7 @@ en knap, men forbindes med 3 ledninger: 3v, gnd og signal.
 
 
 <a id="m5"></a>
-# god skærm
+# God skærm
 *ID: m5*
 ##### Type: OUTPUT
 
