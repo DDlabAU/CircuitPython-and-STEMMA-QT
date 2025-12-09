@@ -1,3 +1,20 @@
+# Board Oversigt
+Naviger til:
+
+- [QT Py S3](#qt-py-s3)
+- [Feather S3](#feather-s3)
+- [Adalogger RP2040 Feather](#adalogger-rp2040-feather)
+- [Raspberry Pi Pico RP2040](#raspberry-pi-pico-rp2040)
+
+---
+# Vær opmærksom på
+For nylig skiftede circuitpython fra version 9.x.x til 10.x.x. Det kan gøre det lidt sværere at hente ned på nogle af vores boards, da man skal følge [denne guide](https://learn.adafruit.com/adafruit-esp32-s3-feather/update-tinyuf2-bootloader-for-circuitpython-10-and-later 
+)
+
+
+Hvis i ikke magter kan man altid klikke på "Previous Versions of CircuitPython" og downloade version 9.2.9, så virker det perfekt.
+
+
 ## QT Py S3
 
 *ID: b1*
@@ -57,7 +74,7 @@ RP2040 chip med **microSD** slot
 
 - MicroSD slot til data logging
 - Nemt at tilslutte batteri
-- Ikke helt ligeså "avanceret" chip som de andre boards
+- Ikke helt ligeså "avanceret" chip som esp32
 - men stadig en god chip der er MANGE GANGE hurtigere end arduino uno's chip
 - 8 MB Flash
 - Arduino / CircuitPython Kompatibel
@@ -74,3 +91,27 @@ RP2040 chip med **microSD** slot
 - [Officiel Guide](https://learn.adafruit.com/adafruit-feather-rp2040-adalogger)  
 - [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/adafruit_feather_rp2040_adalogger/)
 - [Eksempelkode: Gem på SD](https://learn.adafruit.com/adafruit-feather-rp2040-adalogger/sd-card#sd-card-write-test-3153417)
+
+
+## Raspberry Pi Pico RP2040
+ 
+*ID: b4*
+
+Ingen fordele over de andre, på nær prisen
+
+Basically samme board som ovenstående adalogger ud over:
+- den har ikke stemma-qt indgang
+- den har ikke sd læser
+- den bruger ikke usb c
+- den har ikke batteri indgang
+
+men den koster under 50 kroner!
+
+Så kun brug den hvis i har et simpelt projekt, eller hvis i vil have et billigt board så i billigt kan købe jeres projekt når i er færdige, eller hvis i vil lave en mere permanent prototype med lodning direkte på boarded.
+
+
+
+<img src="https://assets.raspberrypi.com/static/74679d6c81ffc5503a20b64feae2ed4f/2b8d7/pico-rp2040.webp" alt="Adalogger RP2040" width="300"/>  
+
+- [Officiel Guide](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico-1-familyr)  
+- [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/raspberry_pi_pico/)
