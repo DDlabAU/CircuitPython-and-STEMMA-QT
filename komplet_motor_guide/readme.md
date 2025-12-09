@@ -1,4 +1,18 @@
 
+
+### Hop til motor-komponent (klik)
+
+- [n0 — small Solenoid](#small-solenoid)
+- [n1 — Servo 180°](#servo-180)
+- [n2 — Servo continous (360)](#servo-continous-360)
+- [n3 — Simple dc motor](#simple-dc-motor)
+- [n4 — Geared dc motor](#geared-dc-motor)
+- [n5 — Large Solenoid](#large-solenoid)
+- [n6 — Stepper motor](#stepper-motor)
+- [o2* — Vibration motor](#vibration-motor)
+- [Linear actuator*](#linear-actuator)
+
+
 # small Solenoid
 ### ID: n0
 #### Key feature:
@@ -75,16 +89,6 @@ Push/pull solenoid. Når den får strøm skubber den med en solid kraft 2-3 cm f
 - den røde skal til ekstern strøm IND
 - den sorte skal BÅDE til ekstern strøm GND og board GND
 
-# Vibration motor
-### ID: o2*
-(stemma komponent, find den ved o2)
-#### Key feature:
-Perfekt hvis du vil inkorporere haptisk feedback i et projekt. har over 100 forskellige vibrationsmønstre. Meget nem at bruge.
-
-Bruger denne driver:
-https://www.adafruit.com/product/2305
-Det eneste du skal er at plugge det ind i boarded med et stemma qt kabel og skrive kode. mega nemt
-
 # Stepper motor
 ### ID: n6
 #### Key feature:
@@ -100,6 +104,16 @@ Hvad du skal bruge
 bruge denne guide til wiring:
 
 https://learn.adafruit.com/adafruit-tmc2209-stepper-motor-driver-breakout-board/circuitpython-and-python 
+
+# Vibration motor
+### ID: o2*
+(stemma komponent, find den ved o2)
+#### Key feature:
+Perfekt hvis du vil inkorporere haptisk feedback i et projekt. har over 100 forskellige vibrationsmønstre. Meget nem at bruge.
+
+Bruger denne driver:
+https://www.adafruit.com/product/2305
+Det eneste du skal er at plugge det ind i boarded med et stemma qt kabel og skrive kode. mega nemt
 
 # Linear actuator
 #### Key feature:
