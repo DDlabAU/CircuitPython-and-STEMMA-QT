@@ -5,6 +5,7 @@ Overblik over boards og komponenter, som er understøttet af CircuitPython. Båd
 Læs om vores udvalg af forskellige boards der understøtter circuit python og STEMMA QT forbindelsen.
 
 <a href="boards"><img src="boards.jpg" alt="Boards" style="cursor:pointer;" width="200"></a>
+<a href="boards"><img src="b1.png" alt="b1-id" style="cursor:pointer;" width="70"></a>
 
 
 
