@@ -9,7 +9,8 @@
 - [i7 — Gamepad](#i7)
 - [i8 — Real Time Clock](#i8)
 - [i9 — Svagstrøms-sensor](#i9)
-- [i10 — 9-axis orientation](#i10)
+- [i10 — Wii Nunchuck + adapter](#i10)
+
 
 **OUTPUT**
 - [o1 — LED Matrix](#o1)
@@ -331,28 +332,8 @@ Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og s
 ---
 
 <a id="i10"></a>
-# Ni-akse orientering
-*ID: i10*
-##### Type: INPUT
-
-*OBS: vi har ikke stemmaQT-udgaven, derfor skal du selv sætte 4 ledninger i 3v, gnd, sda, og scl.*
-
-Et standard accelerometer er god til mange ting, særligt at registere ryst, orientering, taps og andre basisbevægelser.
-Denne sensor kan meget mere, da den også har magnetometer og gyroskop, kan du bruge den som kompas, og altid få din præcise orientering. Til projekter der kræver lidt mere en blot et simpelt accelerometer.
- 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/024/585/large1024/sensors_2472_top_ORIG.jpg?1429638074" alt="QT Py S3" width="200"/>
-
-
-- [Officiel Guide](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor)
-
-- [Eksempelkode](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython#full-example-code-2998132)
-
-
----
-
-<a id="i11"></a>
 # Wii Nunchuck + Adapter
-*ID: i11*
+*ID: i10*
 ##### Type: INPUT
 
 Med dette kan du nemt styre din prototype. controlleren har 2 knappper, et joystick og et indbygget accelerometer, så du også kan fx ryste controlleren for at gøre noget. Meget nem og fed at bruge! 

@@ -11,6 +11,7 @@
 - [m9 — dac lyd minijack](#m9)
 - [m10 — dac lyd amp](#m10)
 - [m12 — Neopixel LED strip](#m10)
+- [m13 — 9-akse orientering](#m13)
 - [m+ — diverse input](#m+)
 - [m+ — diverse output](#m++)
 
@@ -215,6 +216,25 @@ Neopixels er den nemmeste måde af få lys til dit projekt. De kan programmes ti
 - [Produkt side](https://www.adafruit.com/product/2541)
 
 - [Eksempelkode](https://learn.adafruit.com/circuitpython-essentials/circuitpython-neopixel)
+
+---
+
+<a id="m13"></a>
+# Ni-akse orientering
+*ID: m13*
+##### Type: INPUT
+
+*OBS: vi har ikke stemmaQT-udgaven, derfor skal du selv sætte 4 ledninger i 3v, gnd, sda, og scl.*
+
+Et standard accelerometer er god til mange ting, særligt at registere ryst, orientering, taps og andre basisbevægelser.
+Denne sensor kan meget mere, da den også har magnetometer og gyroskop, kan du bruge den som kompas, og altid få din præcise orientering. Til projekter der kræver lidt mere en blot et simpelt accelerometer.
+ 
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/024/585/large1024/sensors_2472_top_ORIG.jpg?1429638074" alt="QT Py S3" width="200"/>
+
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython#full-example-code-2998132)
 
 ---
 
