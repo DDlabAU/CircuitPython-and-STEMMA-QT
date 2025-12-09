@@ -123,7 +123,7 @@ PORT = 1883
 ---
 
 # Shelly plug
-
+### ID: w1
 <img src="shelly.jpg" alt="Shellyplug" width="300"/>
 
 Shelly er en smartplug til projekter omhandlende strøm. Den kan både bruges uden CircuitPython på sit eget webinterface, som man åbner ved at tilslutte den til strøm, forbinde sin computer til det wifi der dukker op og til sidst gå ind i en browser og skrive: [http://192.168.33.1/](http://192.168.33.1/)  

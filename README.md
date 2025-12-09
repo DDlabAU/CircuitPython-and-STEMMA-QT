@@ -28,8 +28,10 @@ Andre komponenter der bruger 2,3,5,10 eller flere ledninger. De fleste er stadig
 Wifi, bluetooth, api mm. Virkeligt fedt, men kræver opsætning og tid.
 
 <a href="advanced"><img src="advanced.png" alt="advanced" style="cursor:pointer;" width="200"></a>
+<a href="advanced"><img src="w1.png" alt="w1-id" style="cursor:pointer;" width="70"></a>
 
 # [Komplet motor guide](komplet_motor_guide)
 Hvad kan de forskellige motorer? hvordan tilslutter man dem? skal de have 3V, 5V, 12V? Find alle svarene herinde!
 
 <a href="komplet_motor_guide"><img src="motors.jpg" alt="motors" style="cursor:pointer;" width="200"></a>
+<a href="komplet_motor_guide"><img src="n1.png" alt="n1-id" style="cursor:pointer;" width="70"></a>

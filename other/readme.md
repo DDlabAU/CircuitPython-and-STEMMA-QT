@@ -10,6 +10,7 @@
 - [m8 — Servo motor](#m8)
 - [m9 — dac lyd minijack](#m9)
 - [m10 — dac lyd amp](#m10)
+- [m12 — Neopixel LED strip](#m10)
 - [m+ — diverse input](#m+)
 - [m+ — diverse output](#m++)
 
@@ -185,7 +186,7 @@ Følg guiden for at se hvordan ledningerne skal tilsluttes :D
 
 <a id="m10"></a>
 # i2s dac + AMP - lydudgang til de små højtalere vi har i komponentskabet
-*ID: m9*
+*ID: m10*
 ##### Type: OUTPUT
 
 Skal du bruge lyd? En lille højtaler indbygget i designet? så er du kommet til det rigtige sted. Da de fleste af vores nye boards har digital lyd skal man nemlig bruge en dac (digital to analog converter) til at afspille lyd. Vi har 2 versioner. Denne er til at tilslutte de små højtalere vi har i labbet, hvis du vil indbygge en lille højtaler i dit design. Den anden id: m10 er til minijack udgang. 
@@ -201,6 +202,21 @@ Følg guiden for at se hvordan ledningerne skal tilsluttes :D
 
 ---
 
+<a id="m12"></a>
+# Neopixel LED strip
+*ID: m12*
+##### Type: OUTPUT
+
+Neopixels er den nemmeste måde af få lys til dit projekt. De kan programmes til alle farver du kan forestille dig ved at skrive en RGB værdi, og så er de individuelt addresserbare, hvilket betyder at du fx kan få pixel nr 4 til at være rød, mens alle andre er slukkede. Man kan også lave animationer på LED'erne.
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/052/065/large1024/circuitpython_NeoPixelStripPurple.jpg?1521243999" alt="data from gps" width="200"/>
+
+
+- [Produkt side](https://www.adafruit.com/product/2541)
+
+- [Eksempelkode](https://learn.adafruit.com/circuitpython-essentials/circuitpython-neopixel)
+
+---
 
 <a id="m+"></a>
 # Diverse input vi kun har et par stykker af
