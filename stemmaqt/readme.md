@@ -12,6 +12,9 @@
 - [i10 — Wii Nunchuck + adapter](#i10)
 - [i11 - IR Presence/ Motion Sensor](#i11)
 - [i12 - Reflective Poto Interrupt Sensor](#i12)
+- [i13 - 24bit ADC](#i13)
+- [i14 - Mini GPS](#i14)
+- [i15 - Proximity, Light, RGB and Gesture Sensor](#i15)
 
 
 
@@ -23,6 +26,7 @@
 - [o5 — Buzzer](#o5)
 - [o6 — LCD-skærm](#o6)
 - [o7 - MOSFET Driver](#o7)
+  
 
 
 # OUTPUT
@@ -186,15 +190,15 @@ LCD skærm med en såkald "backpack" på der gør den meget nemt at bruge - blot
 
 
 <a id="o7"></a>
-# NA
+#  MOSFET Driver
 *ID: o7*
 ##### Type: OUTPUT
 
-NA
+En driver til "Solenoid, Motors, LEDs etc" 
 
-<img src="https://cdn-shop.adafruit.com/970x728/198-05.jpg" alt="Relay" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/5648-04.jpg" alt="MOSFET driver" width="200"/>
 
-- [Officiel Guide](https://learn.adafruit.com/i2c-spi-lcd-backpack)
+- [Officiel Guide](https://learn.adafruit.com/adafruit-mosfet-driver)
 
 
 ---
@@ -374,28 +378,73 @@ Med dette kan du nemt styre din prototype. controlleren har 2 knappper, et joyst
 
 NA
  
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/098/517/medium800thumb/adafruit_products_4836-1.jpg?1610300614" alt="QT Py S3" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/6426-04.jpg" alt="Presence and Motion Sensor" width="200"/>
 
 
-- [Officiel Guide](https://learn.adafruit.com/adafruit-wii-nunchuck-breakout-adapter)
+- [Officiel Guide](https://learn.adafruit.com/adafruit-sths34pf80-ir-presence-motion-sensor)
 
 
 ---
 
 <a id="i12"></a>
-# IR Presence / Motion Sensor 
+# Reflective Poto Interrupt Sensor
 *ID: i12*
 ##### Type: INPUT
 
 NA
  
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/098/517/medium800thumb/adafruit_products_4836-1.jpg?1610300614" alt="QT Py S3" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/5913-00.jpg" alt="Optical reflective sensor" width="200"/>
 
 
-- [Officiel Guide](https://learn.adafruit.com/adafruit-wii-nunchuck-breakout-adapter)
+- [Officiel Guide](https://learn.adafruit.com/adafruit-stemma-reflective-photo-interrupt-sensor)
 
 
 ---
+<a id="i13"></a>
+# 24bit ADC
+*ID: i13*
+##### Type: INPUT
+
+NA
+ 
+<img src="https://cdn-shop.adafruit.com/970x728/4538-06.jpg" alt="ADC" width="200"/>
+
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-nau7802-24-bit-adc-stemma-qt-qwiic)
+
+---
+
+<a id="i14"></a>
+# Mini GPS
+*ID: i14*
+##### Type: INPUT
+
+NA
+ 
+<img src="https://cdn-shop.adafruit.com/970x728/4415-05.jpg" alt="Mini GPS" width="200"/>
+
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-mini-gps-pa1010d-module)
+
+---
+
+
+<a id="i15"></a>
+# Proximity, Light, RGB and Gesture Sensor
+*ID: i15*
+##### Type: INPUT
+
+NA
+ 
+<img src="https://cdn-shop.adafruit.com/970x728/3595-06.jpg" alt="Proximity, Light, Gesture Sensor" width="200"/>
+
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-apds9960-breakout)
+
+---
+
+
+
 
 <a id="i+"></a>
 # diverse input
