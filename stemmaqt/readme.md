@@ -10,6 +10,9 @@
 - [i8 — Real Time Clock](#i8)
 - [i9 — Svagstrøms-sensor](#i9)
 - [i10 — Wii Nunchuck + adapter](#i10)
+- [i11 - IR Presence/ Motion Sensor](#i11)
+- [i12 - Reflective Poto Interrupt Sensor](#i12)
+
 
 
 **OUTPUT**
@@ -19,6 +22,7 @@
 - [o4 — DC Motor](#o4)
 - [o5 — Buzzer](#o5)
 - [o6 — LCD-skærm](#o6)
+- [o7 - MOSFET Driver](#o7)
 
 
 # OUTPUT
@@ -177,6 +181,21 @@ LCD skærm med en såkald "backpack" på der gør den meget nemt at bruge - blot
 - [Officiel Guide](https://learn.adafruit.com/i2c-spi-lcd-backpack)
 
 - [Eksempelkode](https://learn.adafruit.com/i2c-spi-lcd-backpack/python-circuitpython#full-example-code-3007416)
+
+---
+
+
+<a id="o7"></a>
+# NA
+*ID: o7*
+##### Type: OUTPUT
+
+NA
+
+<img src="https://cdn-shop.adafruit.com/970x728/198-05.jpg" alt="Relay" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/i2c-spi-lcd-backpack)
+
 
 ---
 
@@ -346,6 +365,38 @@ Med dette kan du nemt styre din prototype. controlleren har 2 knappper, et joyst
 - [Eksempelkode](https://learn.adafruit.com/adafruit-wii-nunchuck-breakout-adapter/python-circuitpython#full-example-code-3079120)
 
 ---
+
+
+<a id="i11"></a>
+# IR Presence / Motion Sensor 
+*ID: i11*
+##### Type: INPUT
+
+NA
+ 
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/098/517/medium800thumb/adafruit_products_4836-1.jpg?1610300614" alt="QT Py S3" width="200"/>
+
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-wii-nunchuck-breakout-adapter)
+
+
+---
+
+<a id="i12"></a>
+# IR Presence / Motion Sensor 
+*ID: i12*
+##### Type: INPUT
+
+NA
+ 
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/098/517/medium800thumb/adafruit_products_4836-1.jpg?1610300614" alt="QT Py S3" width="200"/>
+
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-wii-nunchuck-breakout-adapter)
+
+
+---
+
 <a id="i+"></a>
 # diverse input
 *ID: i+*
