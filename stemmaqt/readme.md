@@ -12,7 +12,7 @@
 - [i10 — Wii Nunchuck + adapter](#i10)
 - [i11 — IR Presence/ Motion Sensor](#i11)
 - [i12 — Reflective Poto Interrupt Sensor](#i12)
-- [i13 — 24bit ADC](#i13)
+- [i13 — 24bit ADC - Strain Gauge / Load Cell Læser](#i13)
 - [i14 — Mini GPS](#i14)
 - [i15 — Proximity, Light, RGB and Gesture Sensor](#i15)
 
@@ -401,7 +401,7 @@ NA
 
 ---
 <a id="i13"></a>
-# 24bit ADC
+# 24bit ADC - Strain Gauge / Load Cell Læser
 *ID: i13*
 ##### Type: INPUT
 
