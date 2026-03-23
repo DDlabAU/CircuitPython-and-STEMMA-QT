@@ -10,11 +10,11 @@
 - [i8 — Real Time Clock](#i8)
 - [i9 — Svagstrøms-sensor](#i9)
 - [i10 — Wii Nunchuck + adapter](#i10)
-- [i11 - IR Presence/ Motion Sensor](#i11)
-- [i12 - Reflective Poto Interrupt Sensor](#i12)
-- [i13 - 24bit ADC](#i13)
-- [i14 - Mini GPS](#i14)
-- [i15 - Proximity, Light, RGB and Gesture Sensor](#i15)
+- [i11 — IR Presence/ Motion Sensor](#i11)
+- [i12 — Reflective Poto Interrupt Sensor](#i12)
+- [i13 — 24bit ADC](#i13)
+- [i14 — Mini GPS](#i14)
+- [i15 — Proximity, Light, RGB and Gesture Sensor](#i15)
 
 
 
@@ -25,7 +25,7 @@
 - [o4 — DC Motor](#o4)
 - [o5 — Buzzer](#o5)
 - [o6 — LCD-skærm](#o6)
-- [o7 - MOSFET Driver](#o7)
+- [o7 — MOSFET Driver](#o7)
   
 
 
