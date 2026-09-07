@@ -445,10 +445,12 @@ NA
 ---
 
 <a id="i16"></a>
-# True CO2 sensor, with humidity and temperature SCD41
-*ID: i15*
+# True CO2 sensor, with humidity and temperature
+*ID: i16*
 ##### Type: INPUT
 
+**SCD41**
+<br>
 Pisse god og præcis (og dyr) CO2 sensor til dine indendørs og udendørs luftkvalitetsprojekter
 
 rækkevidde: 400~5000 ppm (der er lidt over 400 ppm i atmosfæren, så det svarer til bedste mulige luftkvalitet) Præcision ±(40 ppm + 5%)
