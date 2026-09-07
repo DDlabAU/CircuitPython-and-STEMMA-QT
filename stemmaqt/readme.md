@@ -15,6 +15,7 @@
 - [i13 — 24bit ADC - Strain Gauge / Load Cell Læser](#i13)
 - [i14 — Mini GPS](#i14)
 - [i15 — Proximity, Light, RGB and Gesture Sensor](#i15)
+- [i16 - True Co2 Sensor + temperature and humidity](#i16)
 
 
 
@@ -440,6 +441,23 @@ NA
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-apds9960-breakout)
+
+---
+
+<a id="i16"></a>
+# True CO2 sensor, with humidity and temperature SCD41
+*ID: i15*
+##### Type: INPUT
+
+Pisse god og præcis (og dyr) CO2 sensor til dine indendørs og udendørs luftkvalitetsprojekter
+
+rækkevidde: 400~5000 ppm (der er lidt over 400 ppm i atmosfæren, så det svarer til bedste mulige luftkvalitet) Præcision ±(40 ppm + 5%)
+
+ 
+<img src="https://cdn-shop.adafruit.com/970x728/5190-06.jpg" alt="co2 Sensor" width="200"/>
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-scd-40-and-scd-41/python-circuitpython#example-code-3101452)
+- [Officiel Guide](https://learn.adafruit.com/adafruit-scd-40-and-scd-41/overview)
 
 ---
 
