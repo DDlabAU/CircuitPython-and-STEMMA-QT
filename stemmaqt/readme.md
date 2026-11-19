@@ -24,7 +24,7 @@
 - [o1 — LED Matrix](#o1)
 - [o2 — Haptic Motor Controller](#o2)
 - [o3 — Grayscale 1.5" OLED Skærm](#o3)
-- [o4 — 7-segment-display](#o3)
+- [o4 — 7-segment-display](#o4)
 - [o5 — NFC link/text sender](#o5)
 - [o6 — LCD-skærm](#o6)
 - [o7 — MOSFET Driver](#o7)
