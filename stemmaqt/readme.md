@@ -11,7 +11,7 @@
 - [i9 — Svagstrøms-sensor](#i9)
 - [i10 — Wii Nunchuck + adapter](#i10)
 - [i11 — IR Presence & Motion Sensor](#i11)
-- [i12 — Reflective Poto Interrupt Sensor](#i12)
+- [i12 — Reflective Photo Interrupt Sensor](#i12)
 - [i13 — 24bit ADC - Strain Gauge / Load Cell Læser](#i13)
 - [i14 — Mini GPS](#i14)
 - [i15 — Proximity, Light, RGB and Gesture Sensor](#i15)
@@ -33,11 +33,11 @@
 # INPUT
 
 <a id="i1"></a>
-# Temperatur- og luftfugtigheds sensor
+# Temperatur- og luftfugtighedssensor
 *ID: i1*
 ##### Type: INPUT
 
-Mål temperatur og luftfugtighed
+Mål temperatur og luftfugtighed.
 
 <img src="https://cdn-learn.adafruit.com/assets/assets/000/139/087/large1024/temperature___humidity_a.png?1755549776" alt="QT Py S3" width="200"/>
 
@@ -85,7 +85,7 @@ obs. sensoren skal varme op i nogle minutter fra den tændes. Det gør den af si
 *ID: i4*
 ##### Type: INPUT
 
-Mål lysmængde og afstand til objekt foran senso.
+Mål lysmængde og afstand til objekt foran sensoren.
 
 <img src="https://cdn-learn.adafruit.com/assets/assets/000/133/283/large1024/adafruit_products_6064-04.jpg?1729786686" alt="QT Py S3" width="200"/>
 
@@ -120,7 +120,7 @@ Mål bevægelse(acceleration), orientering, og taps
 *ID: i6*
 ##### Type: INPUT
 
-Tilføj brugerinput i form af tryk og rotation på hjulet. Denne RE, har også en neopixel led
+Tilføj brugerinput i form af tryk og rotation på hjulet. Denne rotary encoder har også en Neopixel-LED.
 
 <img src="https://cdn-shop.adafruit.com/970x728/4991-09.jpg" alt="QT Py S3" width="200"/>
 
@@ -137,7 +137,7 @@ Tilføj brugerinput i form af tryk og rotation på hjulet. Denne RE, har også e
 *ID: i7*
 ##### Type: INPUT
 
-lille spil-kontroller med a,b,x,y,start,select-knapper og en gamepad. kan fx mappes til tastaturknapper og bruges til at styre spil på Y8
+Lille spil-kontroller med a,b,x,y,start,select-knapper og en gamepad. Kan fx mappes til tastaturknapper og bruges til at styre spil på Y8
 
 <img src="https://cdn-learn.adafruit.com/assets/assets/000/122/121/large1024/adafruit_products_GPQT_top.jpg?1687817547" alt="QT Py S3" width="200"/>
 
@@ -167,7 +167,7 @@ Brug eksempelkoden til at indstille tiden. Med batteri i, kan denne rtc nu huske
 ---
 
 <a id="i9"></a>
-# Strømmåler 
+# Svagstrøms-sensor 
 *ID: i9*
 ##### Type: INPUT
 
@@ -189,7 +189,7 @@ Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og s
 *ID: i10*
 ##### Type: INPUT
 
-Med dette kan du nemt styre din prototype. controlleren har 2 knappper, et joystick og et indbygget accelerometer, så du også kan fx ryste controlleren for at gøre noget. Meget nem og fed at bruge! 
+Med dette kan du nemt styre din prototype. Controlleren har 2 knapper, et joystick og et indbygget accelerometer, så du også kan fx ryste controlleren for at gøre noget. Meget nem og fed at bruge! 
  
 <img src="https://cdn-learn.adafruit.com/assets/assets/000/098/517/medium800thumb/adafruit_products_4836-1.jpg?1610300614" alt="QT Py S3" width="200"/>
 
@@ -206,7 +206,7 @@ Med dette kan du nemt styre din prototype. controlleren har 2 knappper, et joyst
 *ID: i11*
 ##### Type: INPUT
 
-Denne sensor kan udover at registrere bevægelse også registrere om der er personer tilstede, selvom de står helt stille. Noget man ikke kan med en normal bevægelsessensor.
+Denne sensor kan udover at registrere bevægelse også registrere om der er personer til stede, selvom de står helt stille. Noget man ikke kan med en normal bevægelsessensor.
  
 <img src="https://cdn-shop.adafruit.com/970x728/6426-04.jpg" alt="Presence and Motion Sensor" width="200"/>
 
@@ -217,11 +217,11 @@ Denne sensor kan udover at registrere bevægelse også registrere om der er pers
 ---
 
 <a id="i12"></a>
-# Reflective Poto Interrupt Sensor
+# Reflective Photo Interrupt Sensor
 *ID: i12*
 ##### Type: INPUT
 
-Registrerer om noget paserer foran den. Kan for eksempel bruges til at registrere om nogen går gennem en dør (dog ikke hvilken vej) eller om der bliver lagt et brev i en postkasse.
+Registrerer genstande, der passerer tæt foran sensoren. Kan for eksempel placeres i en postkasse og registrere når der kastes breve i.
  
 <img src="https://cdn-shop.adafruit.com/970x728/5913-00.jpg" alt="Optical reflective sensor" width="200"/>
 
@@ -298,8 +298,8 @@ Rækkevidde: 400~5000 ppm (der er lidt over 400 ppm i atmosfæren, så det svare
 *ID: i+*
 ##### Type: INPUT
 
-### ANO roraty encoder og scroll-hjul
-Fed "controller" til userinput til et deisign
+### ANO rotary encoder og scroll-hjul
+Fed "controller" til userinput til et design.
 
 - [Officiel Guide](https://learn.adafruit.com/ano-rotary-encoder)
 
@@ -318,7 +318,7 @@ Tilslut op til 12 capacitive touch inputs.
 # OUTPUT
 
 <a id="o1"></a>
-# LED Matrix 13*9 neopixels
+# LED Matrix 13*9
 *ID: o1*
 ##### Type: OUTPUT
 
@@ -373,7 +373,7 @@ Det kræver en lille effort at sætte sig ind i hvordan man laver GUI på skærm
 *ID: o4*
 ##### Type: OUTPUT
 
-Simpel skærm med 4-tal eller bogstaver (bedst til tal)
+Simpel skærm med plads til fire tegn (bedst til tal).
 
 <img src="https://cdn-shop.adafruit.com/970x728/880-05.jpg" alt="7-seg-display" width="200"/>
 
@@ -460,11 +460,11 @@ for i in range(len(data)):
 ---
 
 <a id="o6"></a>
-# LCD skærm
+# LCD-skærm
 *ID: o6*
 ##### Type: OUTPUT
 
-LCD skærm med en såkaldt "backpack" på der gør den meget nemt at bruge - blot tilslut stemma kabel
+LCD-skærm med en såkaldt "backpack" på, der gør den meget nem at bruge - tilslut blot et STEMMA QT-kabel.
 
 <img src="https://cdn-shop.adafruit.com/970x728/198-05.jpg" alt="Relay" width="200"/>
 

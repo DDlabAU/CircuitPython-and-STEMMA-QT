@@ -1,4 +1,4 @@
-# Board Oversigt
+# Boardoversigt
 Naviger til:
 
 - [QT Py S3](#qt-py-s3)
@@ -47,7 +47,7 @@ ESP32-S3 chippen i "feather" format:
 - STEMMA QT forbindelse
 - Mange indgange
 
-**OBS: vi har den i 2 versioner der ligner hinanden rigtigt meget. Læs på undersiden af boarded om det er 2MBPSRAM eller No PSRAM, og vælge den tilsvarende version af CircuitPython**
+**OBS: Vi har den i 2 versioner, der ligner hinanden rigtigt meget. Læs på undersiden af boardet om det er 2MBPSRAM eller No PSRAM og vælg den tilsvarende version af CircuitPython**
 
 Vælg den med PSRAM hvis dit projekt kræver mere hukommelse til store datasæt, billeder eller lydbehandling.
 
@@ -71,8 +71,8 @@ RP2040 chip med **microSD** slot
 
 - MicroSD slot til data logging
 - Nemt at tilslutte batteri
-- Ikke helt ligeså "avanceret" chip som esp32
-- men stadig en god chip der er MANGE GANGE hurtigere end arduino uno's chip
+- Ikke helt lige så "avanceret" chip som esp32
+- men stadig en god chip der er MANGE GANGE hurtigere end Arduino UNOs chip
 - 8 MB Flash
 - Arduino / CircuitPython Kompatibel
 - STEMMA QT forbindelse
