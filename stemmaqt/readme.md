@@ -10,24 +10,24 @@
 - [i8 — Real Time Clock](#i8)
 - [i9 — Svagstrøms-sensor](#i9)
 - [i10 — Wii Nunchuck + adapter](#i10)
-- [i11 — IR Presence/ Motion Sensor](#i11)
+- [i11 — IR Presence & Motion Sensor](#i11)
 - [i12 — Reflective Poto Interrupt Sensor](#i12)
 - [i13 — 24bit ADC - Strain Gauge / Load Cell Læser](#i13)
 - [i14 — Mini GPS](#i14)
 - [i15 — Proximity, Light, RGB and Gesture Sensor](#i15)
 - [i16 - True Co2 Sensor + temperature and humidity](#i16)
+- [i+ - Diverse input](#i+)
 
 
 
 **OUTPUT**
 - [o1 — LED Matrix](#o1)
-- [o2 — Vibration Driver](#o2)
-- [o3 — Servo Motor](#o3)
-- [o4 — DC Motor](#o4)
-- [o5 — Buzzer](#o5)
+- [o2 — Haptic Motor Controller](#o2)
+- [o3 — Grayscale 1.5" OLED Skærm](#o3)
+- [o4 — 7-segment-display](#o3)
+- [o5 — NFC link/text sender](#o5)
 - [o6 — LCD-skærm](#o6)
 - [o7 — MOSFET Driver](#o7)
-  
 
 
 # INPUT
@@ -167,8 +167,11 @@ Brug eksempelkoden til at indstille tiden. Med batteri i, kan denne rtc nu huske
 ---
 
 <a id="i9"></a>
-#
-Strømmåler, måler spænding og strøm. Vigtigt: kun til svagstrøm: MAX 26V og max +/- 3.2A
+# Strømmåler 
+*ID: i9*
+##### Type: INPUT
+
+Måler spænding og strøm. Vigtigt: kun til svagstrøm: MAX 26V og max +/- 3.2A
 Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og sende data over wifi.
 
 <img src="https://cdn-shop.adafruit.com/970x728/904-09.jpg" alt="QT Py S3" width="200"/>
@@ -199,11 +202,11 @@ Med dette kan du nemt styre din prototype. controlleren har 2 knappper, et joyst
 
 
 <a id="i11"></a>
-# IR Presence / Motion Sensor 
+# IR Presence & Motion Sensor 
 *ID: i11*
 ##### Type: INPUT
 
-NA
+Denne sensor kan udover at registrere bevægelse også registrere om der er personer tilstede, selvom de står helt stille. Noget man ikke kan med en normal bevægelsessensor.
  
 <img src="https://cdn-shop.adafruit.com/970x728/6426-04.jpg" alt="Presence and Motion Sensor" width="200"/>
 
@@ -218,7 +221,7 @@ NA
 *ID: i12*
 ##### Type: INPUT
 
-NA
+Registrerer om noget paserer foran den. Kan for eksempel bruges til at registrere om nogen går gennem en dør (dog ikke hvilken vej) eller om der bliver lagt et brev i en postkasse.
  
 <img src="https://cdn-shop.adafruit.com/970x728/5913-00.jpg" alt="Optical reflective sensor" width="200"/>
 
@@ -232,7 +235,7 @@ NA
 *ID: i13*
 ##### Type: INPUT
 
-NA
+Bruges til at bygge sin egen vægt-sensor.
  
 <img src="https://cdn-shop.adafruit.com/970x728/4538-06.jpg" alt="ADC" width="200"/>
 
@@ -246,7 +249,7 @@ NA
 *ID: i14*
 ##### Type: INPUT
 
-NA
+GPS placering i dit projekt. 
  
 <img src="https://cdn-shop.adafruit.com/970x728/4415-05.jpg" alt="Mini GPS" width="200"/>
 
@@ -261,7 +264,7 @@ NA
 *ID: i15*
 ##### Type: INPUT
 
-NA
+En sensor der kan bruges til både at registrere lys, hvor tæt noget er på den og gestures, som swipes, foran den.
  
 <img src="https://cdn-shop.adafruit.com/970x728/3595-06.jpg" alt="Proximity, Light, Gesture Sensor" width="200"/>
 
@@ -277,9 +280,9 @@ NA
 
 **SCD41**
 <br>
-Pisse god og præcis (og dyr) CO2 sensor til dine indendørs og udendørs luftkvalitetsprojekter
+Virkelig god og præcis CO2 sensor til inden- og udendørs luftkvalitetsprojekter
 
-rækkevidde: 400~5000 ppm (der er lidt over 400 ppm i atmosfæren, så det svarer til bedste mulige luftkvalitet) Præcision ±(40 ppm + 5%)
+Rækkevidde: 400~5000 ppm (der er lidt over 400 ppm i atmosfæren, så det svarer til bedste mulige luftkvalitet) Præcision ±(40 ppm + 5%)
 
  
 <img src="https://cdn-shop.adafruit.com/970x728/5190-06.jpg" alt="co2 Sensor" width="200"/>
@@ -290,22 +293,21 @@ rækkevidde: 400~5000 ppm (der er lidt over 400 ppm i atmosfæren, så det svare
 ---
 
 
-
-
 <a id="i+"></a>
 # diverse input
 *ID: i+*
 ##### Type: INPUT
 
-### ANO roraty encoder
-fed "controller" til userinput til et deisign
+### ANO roraty encoder og scroll-hjul
+Fed "controller" til userinput til et deisign
 
 - [Officiel Guide](https://learn.adafruit.com/ano-rotary-encoder)
 
 - [Eksempelkode](https://learn.adafruit.com/ano-rotary-encoder/python-circuitpython)
 
+
 ### Capacitive Touch sensors
-tilslut op til 12 capacitive touch inputs med denne.
+Tilslut op til 12 capacitive touch inputs.
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial)
 
@@ -335,7 +337,7 @@ Vis mønstre, ikoner, bogstaver, tal og animationer med en LED matrix.
 *ID: o2*
 ##### Type: OUTPUT
 
-styr en vibrationsmotor, tænd/sluk og vælg en af 123 indbyggede vibrationsmønstre
+Styr en vibrationsmotor med 123 indbyggede vibrationsmønstre
 
 <img src="https://cdn-learn.adafruit.com/assets/assets/000/113/378/medium800thumb/adafruit_products_2305-05_1.jpg?1658412986" alt="OLED Display" width="200"/>
 
@@ -458,11 +460,11 @@ for i in range(len(data)):
 ---
 
 <a id="o6"></a>
-# LCD-screen
+# LCD skærm
 *ID: o6*
 ##### Type: OUTPUT
 
-LCD skærm med en såkald "backpack" på der gør den meget nemt at bruge - blot tilslut stemma kab
+LCD skærm med en såkaldt "backpack" på der gør den meget nemt at bruge - blot tilslut stemma kabel
 
 <img src="https://cdn-shop.adafruit.com/970x728/198-05.jpg" alt="Relay" width="200"/>
 
