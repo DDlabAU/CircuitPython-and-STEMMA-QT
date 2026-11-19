@@ -10,19 +10,21 @@ Naviger til:
 
 ## QT Py S3
 
-*ID: b1*
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/123/012/large1024/adafruit_products_5426-05.jpg?1690380299" alt="QT Py S3" width="300"/>
 
-Den vilde ESP32-S3 chip på et meget lille board:
+### ID: b1
+
+
+Den vilde ESP32-S3 chip på et meget lille board. Hvis du ikke har et helt bestemt behov, så anbefaler vi, at du bruger dette board til dit projekt. Det har:
+- STEMMA QT forbindelse
 - WiFi
 - Bluetooth
 - 4MB Flash
 - 512KB SRAM
 - 2MB PSRAM
-- Meget meget lille
-- Arduino / CircuitPython Kompatibel
-- STEMMA QT forbindelse
+- Meget lille formfaktor
+- Arduino / CircuitPython kompatibilitet
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/123/012/large1024/adafruit_products_5426-05.jpg?1690380299" alt="QT Py S3" width="300"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-qt-py-esp32-s3)
@@ -31,7 +33,10 @@ Den vilde ESP32-S3 chip på et meget lille board:
 
 
 ## Feather S3
-*ID: b2*
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/118/373/large1024/adafruit_products_FESPS3_top.jpg?1675965407" alt="Feather S3" width="300"/>
+
+### ID: b2
+
 
 ESP32-S3 chippen i "feather" format:
 - Wifi
@@ -47,7 +52,6 @@ ESP32-S3 chippen i "feather" format:
 
 Vælg den med PSRAM hvis dit projekt kræver mere hukommelse til store datasæt, billeder eller lydbehandling.
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/118/373/large1024/adafruit_products_FESPS3_top.jpg?1675965407" alt="Feather S3" width="300"/>
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-esp32-s3-feather)
 
@@ -60,8 +64,9 @@ Vælg den med PSRAM hvis dit projekt kræver mere hukommelse til store datasæt,
 
 
 ## Adalogger RP2040 Feather
+<img src="https://cdn-shop.adafruit.com/970x728/5980-00.jpg" alt="Adalogger RP2040" width="300"/>  
 
-*ID: b3*
+### ID: b3
 
 RP2040 chip med **microSD** slot
 
@@ -77,18 +82,15 @@ RP2040 chip med **microSD** slot
 - Ingen bluetooth eller wifi
 
 
-
-
-<img src="https://cdn-shop.adafruit.com/970x728/5980-00.jpg" alt="Adalogger RP2040" width="300"/>  
-
 - [Officiel Guide](https://learn.adafruit.com/adafruit-feather-rp2040-adalogger)  
 - [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/adafruit_feather_rp2040_adalogger/)
 - [Eksempelkode: Gem på SD](https://learn.adafruit.com/adafruit-feather-rp2040-adalogger/sd-card#sd-card-write-test-3153417)
 
 
 ## Raspberry Pi Pico RP2040
+<img src="https://assets.raspberrypi.com/static/74679d6c81ffc5503a20b64feae2ed4f/2b8d7/pico-rp2040.webp" alt="Adalogger RP2040" width="300"/>  
  
-*ID: b4*
+### ID: b4
 
 Ingen fordele over de andre, på nær prisen
 
@@ -104,7 +106,6 @@ Så kun brug den hvis i har et simpelt projekt, eller hvis i vil have et billigt
 
 
 
-<img src="https://assets.raspberrypi.com/static/74679d6c81ffc5503a20b64feae2ed4f/2b8d7/pico-rp2040.webp" alt="Adalogger RP2040" width="300"/>  
 
 - [Officiel Guide](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico-1-familyr)  
 - [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/raspberry_pi_pico/)
