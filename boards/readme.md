@@ -4,7 +4,6 @@ Naviger til:
 - [QT Py S3](#qt-py-s3)
 - [Feather S3](#feather-s3)
 - [Adalogger RP2040 Feather](#adalogger-rp2040-feather)
-- [Raspberry Pi Pico RP2040](#raspberry-pi-pico-rp2040)
 
 ---
 
@@ -86,26 +85,3 @@ RP2040 chip med **microSD** slot
 - [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/adafruit_feather_rp2040_adalogger/)
 - [Eksempelkode: Gem på SD](https://learn.adafruit.com/adafruit-feather-rp2040-adalogger/sd-card#sd-card-write-test-3153417)
 
-
-## Raspberry Pi Pico RP2040
-<img src="https://assets.raspberrypi.com/static/74679d6c81ffc5503a20b64feae2ed4f/2b8d7/pico-rp2040.webp" alt="Adalogger RP2040" width="300"/>  
- 
-### ID: b4
-
-Ingen fordele over de andre, på nær prisen
-
-Basically samme board som ovenstående adalogger ud over:
-- den har ikke stemma-qt indgang
-- den har ikke sd læser
-- den bruger ikke usb c
-- den har ikke batteri indgang
-
-men den koster under 50 kroner!
-
-Så kun brug den hvis i har et simpelt projekt, eller hvis i vil have et billigt board så i billigt kan købe jeres projekt når i er færdige, eller hvis i vil lave en mere permanent prototype med lodning direkte på boarded.
-
-
-
-
-- [Officiel Guide](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico-1-familyr)  
-- [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/raspberry_pi_pico/)
