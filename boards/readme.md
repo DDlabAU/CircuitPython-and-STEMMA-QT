@@ -7,13 +7,6 @@ Naviger til:
 - [Raspberry Pi Pico RP2040](#raspberry-pi-pico-rp2040)
 
 ---
-# Vær opmærksom på
-For nylig skiftede circuitpython fra version 9.x.x til 10.x.x. Det kan gøre det lidt sværere at hente ned på nogle af vores boards, da man skal følge [denne guide](https://learn.adafruit.com/adafruit-esp32-s3-feather/update-tinyuf2-bootloader-for-circuitpython-10-and-later 
-)
-
-
-Hvis i ikke magter kan man altid klikke på "Previous Versions of CircuitPython" og downloade version 9.2.9, så virker det perfekt.
-
 
 ## QT Py S3
 
