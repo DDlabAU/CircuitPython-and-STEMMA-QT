@@ -39,7 +39,7 @@
 
 Mål temperatur og luftfugtighed.
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/139/087/large1024/temperature___humidity_a.png?1755549776" alt="QT Py S3" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/139/087/large1024/temperature___humidity_a.png?1755549776" alt="Temperatur- og luftfugtighedssensor" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-aht20)
@@ -54,7 +54,7 @@ Mål temperatur og luftfugtighed.
 
 Mål temperatur og lufttryk/højde 
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/139/315/large1024/sensors_bmp581_top_down.jpg?1756832155" alt="QT Py S3" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/139/315/large1024/sensors_bmp581_top_down.jpg?1756832155" alt="Temperatur- og lufttrykssensor" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-bmp580-bmp581-and-bmp585-temperature-and-pressure-sensor)
@@ -71,7 +71,7 @@ Mål temperatur og lufttryk/højde
 Mål luftkvaliteten i eco2 og voc
 obs. sensoren skal varme op i nogle minutter fra den tændes. Det gør den af sig selv, men de målte værdier er upræcise indtil den er varm.
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/097/488/large1024/adafruit_products_SGP30_top_angle.jpg?1607373613" alt="QT Py S3" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/097/488/large1024/adafruit_products_SGP30_top_angle.jpg?1607373613" alt="SGP30-luftkvalitetssensor" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-sgp30-gas-tvoc-eco2-mox-sensor)
@@ -87,7 +87,7 @@ obs. sensoren skal varme op i nogle minutter fra den tændes. Det gør den af si
 
 Mål lysmængde og afstand til objekt foran sensoren.
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/133/283/large1024/adafruit_products_6064-04.jpg?1729786686" alt="QT Py S3" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/133/283/large1024/adafruit_products_6064-04.jpg?1729786686" alt="VCNL4200-lys- og nærhedssensor" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-vcnl4200-long-distance-ir-proximity-and-light-sensor)
@@ -105,7 +105,7 @@ Mål lysmængde og afstand til objekt foran sensoren.
 
 Mål bevægelse(acceleration), orientering, og taps
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/094/347/large1024/sensors_LIS3DH_top_angle.jpg?1598310242" alt="QT Py S3" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/094/347/large1024/sensors_LIS3DH_top_angle.jpg?1598310242" alt="LIS3DH-accelerometer" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout)
@@ -122,7 +122,7 @@ Mål bevægelse(acceleration), orientering, og taps
 
 Tilføj brugerinput i form af tryk og rotation på hjulet. Denne rotary encoder har også en Neopixel-LED.
 
-<img src="https://cdn-shop.adafruit.com/970x728/4991-09.jpg" alt="QT Py S3" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/4991-09.jpg" alt="Drejeencoder med STEMMA QT og NeoPixel LED" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-i2c-qt-rotary-encoder)
@@ -139,7 +139,7 @@ Tilføj brugerinput i form af tryk og rotation på hjulet. Denne rotary encoder 
 
 Lille spil-kontroller med a,b,x,y,start,select-knapper og en gamepad. Kan fx mappes til tastaturknapper og bruges til at styre spil på Y8
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/122/121/large1024/adafruit_products_GPQT_top.jpg?1687817547" alt="QT Py S3" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/122/121/large1024/adafruit_products_GPQT_top.jpg?1687817547" alt="Gamepad QT-controller" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/gamepad-qt/overview)
@@ -156,7 +156,7 @@ Lille spil-kontroller med a,b,x,y,start,select-knapper og en gamepad. Kan fx map
 
 Brug eksempelkoden til at indstille tiden. Med batteri i, kan denne rtc nu huske hvad klokken er, også selvom din dims ikke får strøm, og når du tænder den igen, kan du tilgå klokken! Mega smart<3
 
-<img src="https://cdn-shop.adafruit.com/970x728/5189-00.jpg" alt="QT Py S3" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/5189-00.jpg" alt="Realtidsur med batteriholder" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-pcf8523-real-time-clock)
@@ -174,7 +174,7 @@ Brug eksempelkoden til at indstille tiden. Med batteri i, kan denne rtc nu huske
 Måler spænding og strøm. Vigtigt: kun til svagstrøm: MAX 26V og max +/- 3.2A
 Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og sende data over wifi.
 
-<img src="https://cdn-shop.adafruit.com/970x728/904-09.jpg" alt="QT Py S3" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/904-09.jpg" alt="INA219-strøm- og spændingssensor" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout)
@@ -191,7 +191,7 @@ Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og s
 
 Med dette kan du nemt styre din prototype. Controlleren har 2 knapper, et joystick og et indbygget accelerometer, så du også kan fx ryste controlleren for at gøre noget. Meget nem og fed at bruge! 
  
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/098/517/medium800thumb/adafruit_products_4836-1.jpg?1610300614" alt="QT Py S3" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/098/517/medium800thumb/adafruit_products_4836-1.jpg?1610300614" alt="Adapter til Wii Nunchuck" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-wii-nunchuck-breakout-adapter)
@@ -208,7 +208,7 @@ Med dette kan du nemt styre din prototype. Controlleren har 2 knapper, et joysti
 
 Denne sensor kan udover at registrere bevægelse også registrere om der er personer til stede, selvom de står helt stille. Noget man ikke kan med en normal bevægelsessensor.
  
-<img src="https://cdn-shop.adafruit.com/970x728/6426-04.jpg" alt="Presence and Motion Sensor" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/6426-04.jpg" alt="IR-sensor til tilstedeværelse og bevægelse" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-sths34pf80-ir-presence-motion-sensor)
@@ -223,7 +223,7 @@ Denne sensor kan udover at registrere bevægelse også registrere om der er pers
 
 Registrerer genstande, der passerer tæt foran sensoren. Kan for eksempel placeres i en postkasse og registrere når der kastes breve i.
  
-<img src="https://cdn-shop.adafruit.com/970x728/5913-00.jpg" alt="Optical reflective sensor" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/5913-00.jpg" alt="Refleksionsbaseret optisk sensor" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-stemma-reflective-photo-interrupt-sensor)
@@ -237,7 +237,7 @@ Registrerer genstande, der passerer tæt foran sensoren. Kan for eksempel placer
 
 Bruges til at bygge sin egen vægt-sensor.
  
-<img src="https://cdn-shop.adafruit.com/970x728/4538-06.jpg" alt="ADC" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/4538-06.jpg" alt="ADC-modul til vejecelle" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-nau7802-24-bit-adc-stemma-qt-qwiic)
@@ -251,7 +251,7 @@ Bruges til at bygge sin egen vægt-sensor.
 
 GPS placering i dit projekt. 
  
-<img src="https://cdn-shop.adafruit.com/970x728/4415-05.jpg" alt="Mini GPS" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/4415-05.jpg" alt="Mini GPS-modul" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-mini-gps-pa1010d-module)
@@ -266,7 +266,7 @@ GPS placering i dit projekt.
 
 En sensor der kan bruges til både at registrere lys, hvor tæt noget er på den og gestures, som swipes, foran den.
  
-<img src="https://cdn-shop.adafruit.com/970x728/3595-06.jpg" alt="Proximity, Light, Gesture Sensor" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/3595-06.jpg" alt="APDS9960-sensor til nærhed, lys, farve og gestus" width="200"/>
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-apds9960-breakout)
@@ -285,7 +285,7 @@ Virkelig god og præcis CO2 sensor til inden- og udendørs luftkvalitetsprojekte
 Rækkevidde: 400~5000 ppm (der er lidt over 400 ppm i atmosfæren, så det svarer til bedste mulige luftkvalitet) Præcision ±(40 ppm + 5%)
 
  
-<img src="https://cdn-shop.adafruit.com/970x728/5190-06.jpg" alt="co2 Sensor" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/5190-06.jpg" alt="SCD41-sensor til CO2, temperatur og luftfugtighed" width="200"/>
 
 - [Eksempelkode](https://learn.adafruit.com/adafruit-scd-40-and-scd-41/python-circuitpython#example-code-3101452)
 - [Officiel Guide](https://learn.adafruit.com/adafruit-scd-40-and-scd-41/overview)
@@ -324,7 +324,7 @@ Tilslut op til 12 capacitive touch inputs.
 
 Vis mønstre, ikoner, bogstaver, tal og animationer med en LED matrix.
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/104/458/large1024/adafruit_products_IS31_top_angle.jpg?1631304413" alt="LED Matrix" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/104/458/large1024/adafruit_products_IS31_top_angle.jpg?1631304413" alt="13×9 RGB LED-matrix med IS31FL3741-driver" width="200"/>
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-is31fl3741)
 
@@ -339,9 +339,9 @@ Vis mønstre, ikoner, bogstaver, tal og animationer med en LED matrix.
 
 Styr en vibrationsmotor med 123 indbyggede vibrationsmønstre
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/113/378/medium800thumb/adafruit_products_2305-05_1.jpg?1658412986" alt="OLED Display" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/113/378/medium800thumb/adafruit_products_2305-05_1.jpg?1658412986" alt="DRV2605L-haptikcontroller til vibrationsmotor" width="200"/>
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/072/594/large1024/adafruit_products_DRV_Waveforms.png?1552347698" alt="patterns" height="400">
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/072/594/large1024/adafruit_products_DRV_Waveforms.png?1552347698" alt="Diagram over DRV2605-vibrationsmønstre" height="400">
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/overview)
 
@@ -360,7 +360,7 @@ Det kræver en lille effort at sætte sig ind i hvordan man laver GUI på skærm
 
 
 
-<img src="https://cdn-shop.adafruit.com/970x728/4741-07.jpg" alt="Servo Motor" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/4741-07.jpg" alt="1,5-tommers OLED-skærm med gråtoner" width="200"/>
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-grayscale-1-5-128x128-oled-display)
 
@@ -375,7 +375,7 @@ Det kræver en lille effort at sætte sig ind i hvordan man laver GUI på skærm
 
 Simpel skærm med plads til fire tegn (bedst til tal).
 
-<img src="https://cdn-shop.adafruit.com/970x728/880-05.jpg" alt="7-seg-display" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/880-05.jpg" alt="7-segment-display med fire tegn" width="200"/>
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-led-backpack/0-dot-56-seven-segment-backpack)
 
@@ -394,7 +394,7 @@ Tilføj tekst eller et web-link, og når en telefon kommer tæt på chippen, vil
 
 Desværre findes der ikke et officielt CircuitPython-bibliotek til denne sensor, så det er mere kompliceret at bruge den. Du kan dog følge min step-by-step guide her, som viser, hvordan du får den til at fungere.
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/093/887/large1024/adafruit_products_ST25DV16_top_angle.jpg?1596751982" alt="NFC" width="200"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/093/887/large1024/adafruit_products_ST25DV16_top_angle.jpg?1596751982" alt="ST25DV16K NFC-modul" width="200"/>
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-st25dv16k-i2c-rfic-eeprom-breakout/overview)
 
@@ -466,7 +466,7 @@ for i in range(len(data)):
 
 LCD-skærm med en såkaldt "backpack" på, der gør den meget nem at bruge - tilslut blot et STEMMA QT-kabel.
 
-<img src="https://cdn-shop.adafruit.com/970x728/198-05.jpg" alt="Relay" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/198-05.jpg" alt="LCD-skærm" width="200"/>
 
 - [Officiel Guide](https://learn.adafruit.com/i2c-spi-lcd-backpack)
 
@@ -482,7 +482,7 @@ LCD-skærm med en såkaldt "backpack" på, der gør den meget nem at bruge - til
 
 En driver til "Solenoid, Motors, LEDs etc" 
 
-<img src="https://cdn-shop.adafruit.com/970x728/5648-04.jpg" alt="MOSFET driver" width="200"/>
+<img src="https://cdn-shop.adafruit.com/970x728/5648-04.jpg" alt="MOSFET-driver til motorer, solenoider og LED" width="200"/>
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-mosfet-driver)
 

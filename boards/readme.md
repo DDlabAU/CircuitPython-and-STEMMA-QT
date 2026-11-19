@@ -9,7 +9,7 @@ Naviger til:
 
 ## QT Py S3
 
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/123/012/large1024/adafruit_products_5426-05.jpg?1690380299" alt="QT Py S3" width="300"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/123/012/large1024/adafruit_products_5426-05.jpg?1690380299" alt="QT Py ESP32-S3-board" width="300"/>
 
 ### ID: b1
 
@@ -32,7 +32,7 @@ Den vilde ESP32-S3 chip på et meget lille board. Hvis du ikke har et helt beste
 
 
 ## Feather S3
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/118/373/large1024/adafruit_products_FESPS3_top.jpg?1675965407" alt="Feather S3" width="300"/>
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/118/373/large1024/adafruit_products_FESPS3_top.jpg?1675965407" alt="Feather ESP32-S3-board" width="300"/>
 
 ### ID: b2
 
@@ -63,7 +63,7 @@ Vælg den med PSRAM hvis dit projekt kræver mere hukommelse til store datasæt,
 
 
 ## Adalogger RP2040 Feather
-<img src="https://cdn-shop.adafruit.com/970x728/5980-00.jpg" alt="Adalogger RP2040" width="300"/>  
+<img src="https://cdn-shop.adafruit.com/970x728/5980-00.jpg" alt="Feather RP2040 Adalogger-board" width="300"/>  
 
 ### ID: b3
 
