@@ -30,180 +30,6 @@
   
 
 
-# OUTPUT
-
-<a id="o1"></a>
-# LED Matrix 13*9 neopixels
-*ID: o1*
-##### Type: OUTPUT
-
-Vis mønstre, ikoner, bogstaver, tal og animationer med en LED matrix.
-
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/104/458/large1024/adafruit_products_IS31_top_angle.jpg?1631304413" alt="LED Matrix" width="200"/>
-
-- [Officiel Guide](https://learn.adafruit.com/adafruit-is31fl3741)
-
-- [Eksempelkode](https://learn.adafruit.com/adafruit-is31fl3741/python-circuitpython#basic-example-code-3102692)
-
----
-
-<a id="o2"></a>
-# Haptic Motor Controller / Vibration Controller
-*ID: o2*
-##### Type: OUTPUT
-
-styr en vibrationsmotor, tænd/sluk og vælg en af 123 indbyggede vibrationsmønstre
-
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/113/378/medium800thumb/adafruit_products_2305-05_1.jpg?1658412986" alt="OLED Display" width="200"/>
-
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/072/594/large1024/adafruit_products_DRV_Waveforms.png?1552347698" alt="patterns" height="400">
-
-- [Officiel Guide](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/overview)
-
-- [Eksempelkode](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/python-circuitpython#full-example-code-2998876)
-
----
-
-<a id="o3"></a>
-# Grayscale 1.5" OLED Skærm
-*ID: o3*
-##### Type: OUTPUT
-
-Lille god skærm som dog kun kan vise sorte, hvide og grå nuancer.
-
-Det kræver en lille effort at sætte sig ind i hvordan man laver GUI på skærmen, men guiden er god til at forklare, og det er ikke super svært!
-
-
-
-<img src="https://cdn-shop.adafruit.com/970x728/4741-07.jpg" alt="Servo Motor" width="200"/>
-
-- [Officiel Guide](https://learn.adafruit.com/adafruit-grayscale-1-5-128x128-oled-display)
-
-- [Eksempelkode](https://learn.adafruit.com/adafruit-grayscale-1-5-128x128-oled-display/circuitpython-wiring-and-usage#example-code-3076925)
-
----
-
-<a id="o4"></a>
-# 7-segment-display
-*ID: o4*
-##### Type: OUTPUT
-
-Simpel skærm med 4-tal eller bogstaver (bedst til tal)
-
-<img src="https://cdn-shop.adafruit.com/970x728/880-05.jpg" alt="7-seg-display" width="200"/>
-
-- [Officiel Guide](https://learn.adafruit.com/adafruit-led-backpack/0-dot-56-seven-segment-backpack)
-
-- [Eksempelkode*](https://learn.adafruit.com/adafruit-led-backpack/0-dot-56-seven-segment-backpack-circuitpython-and-python-usage#initialization-3054480) 
-
-*man skal selv sammensætte de dele af eksempelkoden man vil bruge
-
----
-
-<a id="o5"></a>
-# NFC link/text sender
-*ID: o5*
-##### Type: OUTPUT
-
-Tilføj tekst eller et web-link, og når en telefon kommer tæt på chippen, vil den åbne websiden eller vise teksten.
-
-Desværre findes der ikke et officielt CircuitPython-bibliotek til denne sensor, så det er mere kompliceret at bruge den. Du kan dog følge min step-by-step guide her, som viser, hvordan du får den til at fungere.
-
-<img src="https://cdn-learn.adafruit.com/assets/assets/000/093/887/large1024/adafruit_products_ST25DV16_top_angle.jpg?1596751982" alt="NFC" width="200"/>
-
-- [Officiel Guide](https://learn.adafruit.com/adafruit-st25dv16k-i2c-rfic-eeprom-breakout/overview)
-
-<details>
-<summary>Step-by-step: Brug af RFID-læser med CircuitPython</summary>
-
-1. **Gå til GitHub**  
-    Besøg følgende GitHub-repo: [Neradoc/circuitpython-st25dv](https://github.com/Neradoc/circuitpython-st25dv/tree/main)
-
-2. **Download ZIP**  
-    Klik på **Code** -> **Download ZIP**.
-
-3. **Udpak ZIP-filen**  
-    Udpak ZIP-filen et vilkårligt sted på din computer.
-
-4. **Kopier nødvendige filer**  
-    find filerne `rfid_payload.py` og `adafruit_st25dv16.py` og kopier dem til **lib**-mappen på dit CircuitPython-board.
-
-5. **Tilføj biblioteker**  
-    Sørg for at tilføje de nødvendige biblioteker, fx med **circup**. Husk også at importere `adafruit_24lc32`, da det bruges indirekte.
-
-6. **Eksempelkode**  
-    Brug følgende kode. Hvis du er forbundet med STEMMA QT, skal du ikke ændre opsætningen. Vælg enten linje X eller Y, og udkommenter den linje, du ikke bruger.
-
-```python
-# Importer de relevante libs
-import board
-import time
-import adafruit_st25dv16
-import rfid_payload
-import adafruit_24lc32
-
-# STEMMA QT forbindelse
-i2c = board.STEMMA_I2C()
-eeprom = adafruit_st25dv16.ST25DV16(i2c, 0x53)
-
-# "Linje X" Vælg denne linje for LINK
-data = rfid_payload.payload_url("https://www.youtube.com/watch?v=Kx-Mnm_FCI8")
-
-# "Linje Y" Vælg denne linje for TEKST
-# data = rfid_payload.payload_text("Dette er en besked \n dette er en ny linje")
-
-# Udkommenter den linje, du ikke bruger
-
-# Koden skriver indholdet til chippen (ændr ikke dette)
-for i in range(len(data)):
-     eeprom[i] = data[i]
-     time.sleep(0.01)
-```
-
-7. **Arduino for avancerede funktioner**  
-    Hvis du ønsker at udnytte flere funktioner på denne RFID-læser, skal du desværre bruge Arduino.
-</details>
-    
-
-
-
-
-
-
-
-
----
-
-<a id="o6"></a>
-# LCD-screen
-*ID: o6*
-##### Type: OUTPUT
-
-LCD skærm med en såkald "backpack" på der gør den meget nemt at bruge - blot tilslut stemma kab
-
-<img src="https://cdn-shop.adafruit.com/970x728/198-05.jpg" alt="Relay" width="200"/>
-
-- [Officiel Guide](https://learn.adafruit.com/i2c-spi-lcd-backpack)
-
-- [Eksempelkode](https://learn.adafruit.com/i2c-spi-lcd-backpack/python-circuitpython#full-example-code-3007416)
-
----
-
-
-<a id="o7"></a>
-#  MOSFET Driver
-*ID: o7*
-##### Type: OUTPUT
-
-En driver til "Solenoid, Motors, LEDs etc" 
-
-<img src="https://cdn-shop.adafruit.com/970x728/5648-04.jpg" alt="MOSFET driver" width="200"/>
-
-- [Officiel Guide](https://learn.adafruit.com/adafruit-mosfet-driver)
-
-
----
-
 # INPUT
 
 <a id="i1"></a>
@@ -484,5 +310,179 @@ tilslut op til 12 capacitive touch inputs med denne.
 - [Officiel Guide](https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial)
 
 - [Eksempelkode](https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/python-circuitpython#full-example-code-2999017)
+
+---
+
+# OUTPUT
+
+<a id="o1"></a>
+# LED Matrix 13*9 neopixels
+*ID: o1*
+##### Type: OUTPUT
+
+Vis mønstre, ikoner, bogstaver, tal og animationer med en LED matrix.
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/104/458/large1024/adafruit_products_IS31_top_angle.jpg?1631304413" alt="LED Matrix" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-is31fl3741)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-is31fl3741/python-circuitpython#basic-example-code-3102692)
+
+---
+
+<a id="o2"></a>
+# Haptic Motor Controller / Vibration Controller
+*ID: o2*
+##### Type: OUTPUT
+
+styr en vibrationsmotor, tænd/sluk og vælg en af 123 indbyggede vibrationsmønstre
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/113/378/medium800thumb/adafruit_products_2305-05_1.jpg?1658412986" alt="OLED Display" width="200"/>
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/072/594/large1024/adafruit_products_DRV_Waveforms.png?1552347698" alt="patterns" height="400">
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/overview)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/python-circuitpython#full-example-code-2998876)
+
+---
+
+<a id="o3"></a>
+# Grayscale 1.5" OLED Skærm
+*ID: o3*
+##### Type: OUTPUT
+
+Lille god skærm som dog kun kan vise sorte, hvide og grå nuancer.
+
+Det kræver en lille effort at sætte sig ind i hvordan man laver GUI på skærmen, men guiden er god til at forklare, og det er ikke super svært!
+
+
+
+<img src="https://cdn-shop.adafruit.com/970x728/4741-07.jpg" alt="Servo Motor" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-grayscale-1-5-128x128-oled-display)
+
+- [Eksempelkode](https://learn.adafruit.com/adafruit-grayscale-1-5-128x128-oled-display/circuitpython-wiring-and-usage#example-code-3076925)
+
+---
+
+<a id="o4"></a>
+# 7-segment-display
+*ID: o4*
+##### Type: OUTPUT
+
+Simpel skærm med 4-tal eller bogstaver (bedst til tal)
+
+<img src="https://cdn-shop.adafruit.com/970x728/880-05.jpg" alt="7-seg-display" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-led-backpack/0-dot-56-seven-segment-backpack)
+
+- [Eksempelkode*](https://learn.adafruit.com/adafruit-led-backpack/0-dot-56-seven-segment-backpack-circuitpython-and-python-usage#initialization-3054480) 
+
+*man skal selv sammensætte de dele af eksempelkoden man vil bruge
+
+---
+
+<a id="o5"></a>
+# NFC link/text sender
+*ID: o5*
+##### Type: OUTPUT
+
+Tilføj tekst eller et web-link, og når en telefon kommer tæt på chippen, vil den åbne websiden eller vise teksten.
+
+Desværre findes der ikke et officielt CircuitPython-bibliotek til denne sensor, så det er mere kompliceret at bruge den. Du kan dog følge min step-by-step guide her, som viser, hvordan du får den til at fungere.
+
+<img src="https://cdn-learn.adafruit.com/assets/assets/000/093/887/large1024/adafruit_products_ST25DV16_top_angle.jpg?1596751982" alt="NFC" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-st25dv16k-i2c-rfic-eeprom-breakout/overview)
+
+<details>
+<summary>Step-by-step: Brug af RFID-læser med CircuitPython</summary>
+
+1. **Gå til GitHub**  
+    Besøg følgende GitHub-repo: [Neradoc/circuitpython-st25dv](https://github.com/Neradoc/circuitpython-st25dv/tree/main)
+
+2. **Download ZIP**  
+    Klik på **Code** -> **Download ZIP**.
+
+3. **Udpak ZIP-filen**  
+    Udpak ZIP-filen et vilkårligt sted på din computer.
+
+4. **Kopier nødvendige filer**  
+    find filerne `rfid_payload.py` og `adafruit_st25dv16.py` og kopier dem til **lib**-mappen på dit CircuitPython-board.
+
+5. **Tilføj biblioteker**  
+    Sørg for at tilføje de nødvendige biblioteker, fx med **circup**. Husk også at importere `adafruit_24lc32`, da det bruges indirekte.
+
+6. **Eksempelkode**  
+    Brug følgende kode. Hvis du er forbundet med STEMMA QT, skal du ikke ændre opsætningen. Vælg enten linje X eller Y, og udkommenter den linje, du ikke bruger.
+
+```python
+# Importer de relevante libs
+import board
+import time
+import adafruit_st25dv16
+import rfid_payload
+import adafruit_24lc32
+
+# STEMMA QT forbindelse
+i2c = board.STEMMA_I2C()
+eeprom = adafruit_st25dv16.ST25DV16(i2c, 0x53)
+
+# "Linje X" Vælg denne linje for LINK
+data = rfid_payload.payload_url("https://www.youtube.com/watch?v=Kx-Mnm_FCI8")
+
+# "Linje Y" Vælg denne linje for TEKST
+# data = rfid_payload.payload_text("Dette er en besked \n dette er en ny linje")
+
+# Udkommenter den linje, du ikke bruger
+
+# Koden skriver indholdet til chippen (ændr ikke dette)
+for i in range(len(data)):
+     eeprom[i] = data[i]
+     time.sleep(0.01)
+```
+
+7. **Arduino for avancerede funktioner**  
+    Hvis du ønsker at udnytte flere funktioner på denne RFID-læser, skal du desværre bruge Arduino.
+</details>
+    
+
+
+
+
+
+
+
+
+---
+
+<a id="o6"></a>
+# LCD-screen
+*ID: o6*
+##### Type: OUTPUT
+
+LCD skærm med en såkald "backpack" på der gør den meget nemt at bruge - blot tilslut stemma kab
+
+<img src="https://cdn-shop.adafruit.com/970x728/198-05.jpg" alt="Relay" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/i2c-spi-lcd-backpack)
+
+- [Eksempelkode](https://learn.adafruit.com/i2c-spi-lcd-backpack/python-circuitpython#full-example-code-3007416)
+
+---
+
+
+<a id="o7"></a>
+#  MOSFET Driver
+*ID: o7*
+##### Type: OUTPUT
+
+En driver til "Solenoid, Motors, LEDs etc" 
+
+<img src="https://cdn-shop.adafruit.com/970x728/5648-04.jpg" alt="MOSFET driver" width="200"/>
+
+- [Officiel Guide](https://learn.adafruit.com/adafruit-mosfet-driver)
+
 
 ---
