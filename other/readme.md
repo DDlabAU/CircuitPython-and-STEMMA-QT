@@ -1,26 +1,24 @@
 ### Hop til komponent (klik)
 **Miscellaneous**
-- [m1 — Fingerprint sensor](#m1)
-- [m2 — GPS](#m2)
-- [m3 — Jord fugtighed og temp sensor](#m3)
-- [m4 — Taktil knap](#m4)
-- [m5 — God skærm](#m5)
-- [m6 — Infrafrød transceiver](#m6)
-- [m7 — Mosfet motor driver](#m7)
-- [m8 — Servo motor](#m8)
-- [m9 — dac lyd minijack](#m9)
-- [m10 — dac lyd amp](#m10)
-- [m12 — Neopixel LED strip](#m10)
-- [m13 — 9-akse orientering](#m13)
-- [m+ — diverse input](#m+)
-- [m+ — diverse output](#m++)
+- [Fingerprint sensor](#m1)
+- [GPS](#m2)
+- [Jord fugtighed og temp sensor](#m3)
+- [Taktil knap](#m4)
+- [God skærm](#m5)
+- [Infrarød transceiver](#m6)
+- [Mosfet motor driver](#m7)
+- [Servo motor](#m8)
+- [dac lyd minijack](#m9)
+- [dac lyd amp](#m10)
+- [Neopixel LED strip](#m12)
+- [9-akse orientering](#m13)
+- [Diverse input](#m+)
 
 
 
 
 <a id="m1"></a>
 # Fingerprint sensor
-*ID: m1*
 ##### Type: INPUT
 
 Læs fingeraftryk med denne sensor. Tilføje fingre/personer der er godkendte. alle andre er ikke. Nu kan dit prototype kun bruges af udvalgte! Den er nem at forbinde, bare følg guiden (4 ledninger i alt):
@@ -36,7 +34,6 @@ Læs fingeraftryk med denne sensor. Tilføje fingre/personer der er godkendte. a
 
 <a id="m2"></a>
 # GPS
-*ID: m2*
 ##### Type: INPUT
 
 Få din præcise lokation på kloden med få meters præcission, inklusiv din højde over havets overflade og din flipping hastighed! En fanstastisk sensor som oven i hatten er skide nem at sætte op. Når man tænder den, skal den bruge 10-30 sekunder på at tænde og forbinde til sattelitter, MEN hvis det er et problem for ens projekt, så har sensoren et batterislot så man kan sætte et knapcellebatteri i, og så holder sensoren sig tændt og er klar med det samme man skal bruge den!
@@ -60,7 +57,6 @@ Den er nem at forbinde, bare følg guiden (4 ledninger i alt):
 
 <a id="m3"></a>
 # Jord fugtighed+temp sensor
-*ID: m3*
 ##### Type: INPUT
 
 Skal du vande din plante når den er tør?mål temperatur og fugtighed i jord. med denne sensor
@@ -79,7 +75,6 @@ forbind med i2c (4 ledninger, nemt)
 
 <a id="m4"></a>
 # Taktil knap
-*ID: m4*
 ##### Type: INPUT
 
 en knap, men forbindes med 3 ledninger: 3v, gnd og signal.
@@ -98,7 +93,6 @@ en knap, men forbindes med 3 ledninger: 3v, gnd og signal.
 
 <a id="m5"></a>
 # God skærm
-*ID: m5*
 ##### Type: OUTPUT
 
 Runde hjørne, fuld farve rgb, lys, skærm der er synlig fra mange vinkler. kan vise animation og i prinippet afspille video. eneste minus er at den skal forbindes med 8 ledninger. Men bare følg guide og tjek at ledningerne sidder de helt rigtige steder, så er den oppe at køre på ingen tid. Guiden er lavet til et feather board, såsom vores esp32 s3 feather, så brug det, så er det nemmere at følge med.
@@ -115,7 +109,6 @@ Runde hjørne, fuld farve rgb, lys, skærm der er synlig fra mange vinkler. kan 
 
 <a id="m6"></a>
 # INFRARØD TRANSCEIVER
-*ID: m6*
 ##### Type: INPUT & OUTPUT
 
 Kan sende OG modtage ir signal. minder om det circuit playground express har indbygget. aflæs signal fra en fjernbetjening eller et andet board, og send et svar tilbage.
@@ -133,7 +126,6 @@ Kan sende OG modtage ir signal. minder om det circuit playground express har ind
 
 <a id="m7"></a>
 # Mosfet motor driver
-*ID: m7*
 ##### Type: OUTPUT
 
 Genialt driver der kan bruges på alle motorer med 2 ledninger, og gør dem mega nemme at tilslutte og bruge. Meget kort og simpel kode og ingen biblioteker. Vi i labbet har brugt 4-5 af dem til vores motor displayboard, og de er bare skide smarte.
@@ -152,7 +144,6 @@ Genialt driver der kan bruges på alle motorer med 2 ledninger, og gør dem mega
 
 <a id="m8"></a>
 # Servo motor
-*ID: m8*
 ##### Type: OUTPUT
 
 Du kender den nok. Det er den mest kendte motor, og det er der en grund til. Den er billig, hurtig og vigtigst af alt: PRÆCIS. Indtil den på en vinkel mellem 0° og 180° og den kører derhen. Kun fantasien sætter grænser for hvad den kan bruges til.
@@ -168,10 +159,9 @@ Du kender den nok. Det er den mest kendte motor, og det er der en grund til. Den
 
 <a id="m9"></a>
 # i2s dac - lydudgang til høretelefon eller batteri-højtaler
-*ID: m9*
 ##### Type: OUTPUT
 
-Skal du bruge lyd? høj lyd? tag din højtaler med minijack-indgang med og forbind til denne, så kan du få lyd på dit projekt. Da de fleste af vores nye boards har digital lyd skal man nemlig bruge en dac (digital to analog converter) til at afspille lyd. Vi har 2 versioner. Denne er til minijack-output, og så har vi den næste m10 som er til de små højtalere vi har i labbet, hvis du vil indbygge en lille højtaler i dit design.
+Skal du bruge lyd? høj lyd? tag din højtaler med minijack-indgang med og forbind til denne, så kan du få lyd på dit projekt. Da de fleste af vores nye boards har digital lyd skal man nemlig bruge en dac (digital to analog converter) til at afspille lyd. Vi har 2 versioner. Denne er til minijack-output, og så har vi den næste, [i2s dac + AMP](#m10), som er til de små højtalere vi har i labbet, hvis du vil indbygge en lille højtaler i dit design.
 
 Følg guiden for at se hvordan ledningerne skal tilsluttes :D
 
@@ -187,10 +177,9 @@ Følg guiden for at se hvordan ledningerne skal tilsluttes :D
 
 <a id="m10"></a>
 # i2s dac + AMP - lydudgang til de små højtalere vi har i komponentskabet
-*ID: m10*
 ##### Type: OUTPUT
 
-Skal du bruge lyd? En lille højtaler indbygget i designet? så er du kommet til det rigtige sted. Da de fleste af vores nye boards har digital lyd skal man nemlig bruge en dac (digital to analog converter) til at afspille lyd. Vi har 2 versioner. Denne er til at tilslutte de små højtalere vi har i labbet, hvis du vil indbygge en lille højtaler i dit design. Den anden id: m10 er til minijack udgang. 
+Skal du bruge lyd? En lille højtaler indbygget i designet? så er du kommet til det rigtige sted. Da de fleste af vores nye boards har digital lyd skal man nemlig bruge en dac (digital to analog converter) til at afspille lyd. Vi har 2 versioner. Denne er til at tilslutte de små højtalere vi har i labbet, hvis du vil indbygge en lille højtaler i dit design. Den anden, [i2s dac - lydudgang](#m9), er til minijack udgang. 
 
 Følg guiden for at se hvordan ledningerne skal tilsluttes :D
 
@@ -205,7 +194,6 @@ Følg guiden for at se hvordan ledningerne skal tilsluttes :D
 
 <a id="m12"></a>
 # Neopixel LED strip
-*ID: m12*
 ##### Type: OUTPUT
 
 Neopixels er den nemmeste måde af få lys til dit projekt. De kan programmes til alle farver du kan forestille dig ved at skrive en RGB værdi, og så er de individuelt addresserbare, hvilket betyder at du fx kan få pixel nr 4 til at være rød, mens alle andre er slukkede. Man kan også lave animationer på LED'erne.
@@ -221,7 +209,6 @@ Neopixels er den nemmeste måde af få lys til dit projekt. De kan programmes ti
 
 <a id="m13"></a>
 # Ni-akse orientering
-*ID: m13*
 ##### Type: INPUT
 
 *OBS: vi har ikke stemmaQT-udgaven, derfor skal du selv sætte 4 ledninger i 3v, gnd, sda, og scl.*
@@ -240,7 +227,6 @@ Denne sensor kan meget mere, da den også har magnetometer og gyroskop, kan du b
 
 <a id="m+"></a>
 # Diverse input vi kun har et par stykker af
-*ID: m+*
 ##### Type: input
 
 

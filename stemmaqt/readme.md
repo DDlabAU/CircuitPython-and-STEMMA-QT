@@ -1,40 +1,39 @@
 ### Hop til komponent (klik)
 **INPUT**
-- [i1 — Temperatur & luftfugtighed](#i1)
-- [i2 — Temperatur & barometer/altimeter](#i2)
-- [i3 — Luftkvalitet](#i3)
-- [i4 — Lys + Afstand](#i4)
-- [i5 — Accelerometer](#i5)
-- [i6 — Rotary Encoder](#i6)
-- [i7 — Gamepad](#i7)
-- [i8 — Real Time Clock](#i8)
-- [i9 — Svagstrøms-sensor](#i9)
-- [i10 — Wii Nunchuck + adapter](#i10)
-- [i11 — IR Presence & Motion Sensor](#i11)
-- [i12 — Reflective Photo Interrupt Sensor](#i12)
-- [i13 — 24bit ADC - Strain Gauge / Load Cell Læser](#i13)
-- [i14 — Mini GPS](#i14)
-- [i15 — Proximity, Light, RGB and Gesture Sensor](#i15)
-- [i16 - True Co2 Sensor + temperature and humidity](#i16)
-- [i+ - Diverse input](#i+)
+- [Temperatur & luftfugtighed](#i1)
+- [Temperatur & barometer/altimeter](#i2)
+- [Luftkvalitet](#i3)
+- [Lys + Afstand](#i4)
+- [Accelerometer](#i5)
+- [Rotary Encoder](#i6)
+- [Gamepad](#i7)
+- [Real Time Clock](#i8)
+- [Svagstrøms-sensor](#i9)
+- [Wii Nunchuck + adapter](#i10)
+- [IR Presence & Motion Sensor](#i11)
+- [Reflective Photo Interrupt Sensor](#i12)
+- [24bit ADC - Strain Gauge / Load Cell Læser](#i13)
+- [Mini GPS](#i14)
+- [Proximity, Light, RGB and Gesture Sensor](#i15)
+- [True Co2 Sensor + temperature and humidity](#i16)
+- [Diverse input](#i+)
 
 
 
 **OUTPUT**
-- [o1 — LED Matrix](#o1)
-- [o2 — Haptic Motor Controller](#o2)
-- [o3 — Grayscale 1.5" OLED Skærm](#o3)
-- [o4 — 7-segment-display](#o4)
-- [o5 — NFC link/text sender](#o5)
-- [o6 — LCD-skærm](#o6)
-- [o7 — MOSFET Driver](#o7)
+- [LED Matrix](#o1)
+- [Haptic Motor Controller](#o2)
+- [Grayscale 1.5" OLED Skærm](#o3)
+- [7-segment-display](#o4)
+- [NFC link/text sender](#o5)
+- [LCD-skærm](#o6)
+- [MOSFET Driver](#o7)
 
 
 # INPUT
 
 <a id="i1"></a>
 # Temperatur- og luftfugtighedssensor
-*ID: i1*
 ##### Type: INPUT
 
 Mål temperatur og luftfugtighed.
@@ -49,7 +48,6 @@ Mål temperatur og luftfugtighed.
 ---
 <a id="i2"></a>
 # Temperatur og barometer/altimeter
-*ID: i2*
 ##### Type: INPUT
 
 Mål temperatur og lufttryk/højde 
@@ -65,7 +63,6 @@ Mål temperatur og lufttryk/højde
 
 <a id="i3"></a>
 # Luftkvalitet
-*ID: i3*
 ##### Type: INPUT
 
 Mål luftkvaliteten i eco2 og voc
@@ -82,7 +79,6 @@ obs. sensoren skal varme op i nogle minutter fra den tændes. Det gør den af si
 
 <a id="i4"></a>
 # Lys + Afstand
-*ID: i4*
 ##### Type: INPUT
 
 Mål lysmængde og afstand til objekt foran sensoren.
@@ -100,7 +96,6 @@ Mål lysmængde og afstand til objekt foran sensoren.
 
 <a id="i5"></a>
 # Accelerometer
-*ID: i5*
 ##### Type: INPUT
 
 Mål bevægelse(acceleration), orientering, og taps
@@ -117,7 +112,6 @@ Mål bevægelse(acceleration), orientering, og taps
 
 <a id="i6"></a>
 # Rotary Encoder
-*ID: i6*
 ##### Type: INPUT
 
 Tilføj brugerinput i form af tryk og rotation på hjulet. Denne rotary encoder har også en Neopixel-LED.
@@ -134,7 +128,6 @@ Tilføj brugerinput i form af tryk og rotation på hjulet. Denne rotary encoder 
 
 <a id="i7"></a>
 # Gamepad
-*ID: i7*
 ##### Type: INPUT
 
 Lille spil-kontroller med a,b,x,y,start,select-knapper og en gamepad. Kan fx mappes til tastaturknapper og bruges til at styre spil på Y8
@@ -151,7 +144,6 @@ Lille spil-kontroller med a,b,x,y,start,select-knapper og en gamepad. Kan fx map
 
 <a id="i8"></a>
 # Real Time Clock
-*ID: i8*
 ##### Type: INPUT
 
 Brug eksempelkoden til at indstille tiden. Med batteri i, kan denne rtc nu huske hvad klokken er, også selvom din dims ikke får strøm, og når du tænder den igen, kan du tilgå klokken! Mega smart<3
@@ -168,7 +160,6 @@ Brug eksempelkoden til at indstille tiden. Med batteri i, kan denne rtc nu huske
 
 <a id="i9"></a>
 # Svagstrøms-sensor 
-*ID: i9*
 ##### Type: INPUT
 
 Måler spænding og strøm. Vigtigt: kun til svagstrøm: MAX 26V og max +/- 3.2A
@@ -186,7 +177,6 @@ Hvis du vil måle stærkstrøm fra stikkontakten kan du bruge en shellyplug og s
 
 <a id="i10"></a>
 # Wii Nunchuck + Adapter
-*ID: i10*
 ##### Type: INPUT
 
 Med dette kan du nemt styre din prototype. Controlleren har 2 knapper, et joystick og et indbygget accelerometer, så du også kan fx ryste controlleren for at gøre noget. Meget nem og fed at bruge! 
@@ -203,7 +193,6 @@ Med dette kan du nemt styre din prototype. Controlleren har 2 knapper, et joysti
 
 <a id="i11"></a>
 # IR Presence & Motion Sensor 
-*ID: i11*
 ##### Type: INPUT
 
 Denne sensor kan udover at registrere bevægelse også registrere om der er personer til stede, selvom de står helt stille. Noget man ikke kan med en normal bevægelsessensor.
@@ -218,7 +207,6 @@ Denne sensor kan udover at registrere bevægelse også registrere om der er pers
 
 <a id="i12"></a>
 # Reflective Photo Interrupt Sensor
-*ID: i12*
 ##### Type: INPUT
 
 Registrerer genstande, der passerer tæt foran sensoren. Kan for eksempel placeres i en postkasse og registrere når der kastes breve i.
@@ -232,7 +220,6 @@ Registrerer genstande, der passerer tæt foran sensoren. Kan for eksempel placer
 ---
 <a id="i13"></a>
 # 24bit ADC - Strain Gauge / Load Cell Læser
-*ID: i13*
 ##### Type: INPUT
 
 Bruges til at bygge sin egen vægt-sensor.
@@ -246,7 +233,6 @@ Bruges til at bygge sin egen vægt-sensor.
 
 <a id="i14"></a>
 # Mini GPS
-*ID: i14*
 ##### Type: INPUT
 
 GPS placering i dit projekt. 
@@ -261,7 +247,6 @@ GPS placering i dit projekt.
 
 <a id="i15"></a>
 # Proximity, Light, RGB and Gesture Sensor
-*ID: i15*
 ##### Type: INPUT
 
 En sensor der kan bruges til både at registrere lys, hvor tæt noget er på den og gestures, som swipes, foran den.
@@ -275,7 +260,6 @@ En sensor der kan bruges til både at registrere lys, hvor tæt noget er på den
 
 <a id="i16"></a>
 # True CO2 sensor, with humidity and temperature
-*ID: i16*
 ##### Type: INPUT
 
 **SCD41**
@@ -295,7 +279,6 @@ Rækkevidde: 400~5000 ppm (der er lidt over 400 ppm i atmosfæren, så det svare
 
 <a id="i+"></a>
 # diverse input
-*ID: i+*
 ##### Type: INPUT
 
 ### ANO rotary encoder og scroll-hjul
@@ -319,7 +302,6 @@ Tilslut op til 12 capacitive touch inputs.
 
 <a id="o1"></a>
 # LED Matrix 13*9
-*ID: o1*
 ##### Type: OUTPUT
 
 Vis mønstre, ikoner, bogstaver, tal og animationer med en LED matrix.
@@ -334,7 +316,6 @@ Vis mønstre, ikoner, bogstaver, tal og animationer med en LED matrix.
 
 <a id="o2"></a>
 # Haptic Motor Controller / Vibration Controller
-*ID: o2*
 ##### Type: OUTPUT
 
 Styr en vibrationsmotor med 123 indbyggede vibrationsmønstre
@@ -351,7 +332,6 @@ Styr en vibrationsmotor med 123 indbyggede vibrationsmønstre
 
 <a id="o3"></a>
 # Grayscale 1.5" OLED Skærm
-*ID: o3*
 ##### Type: OUTPUT
 
 Lille god skærm som dog kun kan vise sorte, hvide og grå nuancer.
@@ -370,7 +350,6 @@ Det kræver en lille effort at sætte sig ind i hvordan man laver GUI på skærm
 
 <a id="o4"></a>
 # 7-segment-display
-*ID: o4*
 ##### Type: OUTPUT
 
 Simpel skærm med plads til fire tegn (bedst til tal).
@@ -387,7 +366,6 @@ Simpel skærm med plads til fire tegn (bedst til tal).
 
 <a id="o5"></a>
 # NFC link/text sender
-*ID: o5*
 ##### Type: OUTPUT
 
 Tilføj tekst eller et web-link, og når en telefon kommer tæt på chippen, vil den åbne websiden eller vise teksten.
@@ -461,7 +439,6 @@ for i in range(len(data)):
 
 <a id="o6"></a>
 # LCD-skærm
-*ID: o6*
 ##### Type: OUTPUT
 
 LCD-skærm med en såkaldt "backpack" på, der gør den meget nem at bruge - tilslut blot et STEMMA QT-kabel.
@@ -477,7 +454,6 @@ LCD-skærm med en såkaldt "backpack" på, der gør den meget nem at bruge - til
 
 <a id="o7"></a>
 #  MOSFET Driver
-*ID: o7*
 ##### Type: OUTPUT
 
 En driver til "Solenoid, Motors, LEDs etc" 
