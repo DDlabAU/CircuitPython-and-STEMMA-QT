@@ -25,9 +25,7 @@ Den vilde ESP32-S3 chip på et meget lille board. Hvis du ikke har et helt beste
 - Arduino / CircuitPython kompatibilitet
 
 
-
 - [Officiel Guide](https://learn.adafruit.com/adafruit-qt-py-esp32-s3)
-
 - [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/adafruit_qtpy_esp32s3_4mbflash_2mbpsram/)
 
 
@@ -53,9 +51,7 @@ Vælg den med PSRAM hvis dit projekt kræver mere hukommelse til store datasæt,
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-esp32-s3-feather)
-
 - [CircuitPython 2MB PSRAM](https://circuitpython.org/board/adafruit_feather_esp32s3_4mbflash_2mbpsram/)
-
 - [CircuitPython No PSRAM](https://circuitpython.org/board/adafruit_feather_esp32s3_nopsram/)
 
 
