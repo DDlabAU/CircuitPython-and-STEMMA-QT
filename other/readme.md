@@ -26,7 +26,6 @@ Læs fingeraftryk med denne sensor. Tilføje fingre/personer der er godkendte. a
 <img src="https://cdn-learn.adafruit.com/assets/assets/000/002/499/large1024/biometric_fingerprintuse.jpeg?1396783822" alt="Fingerprint sensor" width="400"/>
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-optical-fingerprint-sensor/circuitpython)
-
 - [Eksempelkode](https://learn.adafruit.com/adafruit-optical-fingerprint-sensor/circuitpython#example-code-3044769)
 
 
@@ -48,7 +47,6 @@ Dataen du kan læse fra gps'en:
 Den er nem at forbinde, bare følg guiden (4 ledninger i alt):
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-parsing)
-
 - [Eksempelkode](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage#example-parsing-code-3003973)
 
 ---
@@ -66,7 +64,6 @@ Skal du vande din plante når den er tør?mål temperatur og fugtighed i jord. m
 forbind med i2c (4 ledninger, nemt)
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-stemma-soil-sensor-i2c-capacitive-moisture-sensor)
-
 - [Eksempelkode](https://learn.adafruit.com/adafruit-stemma-soil-sensor-i2c-capacitive-moisture-sensor/python-circuitpython-test#circuitpython-and-python-usage-3009830)
 
 ---
@@ -83,7 +80,6 @@ en knap, men forbindes med 3 ledninger: 3v, gnd og signal.
 
 
 - [Beskrivelse](https://www.adafruit.com/product/4431)
-
 - [Eksempelkode](https://learn.adafruit.com/ble-hid-keyboard-buttons-with-circuitpython?view=all#code-dot-py-3052822)
 
 *eksempelkoden er en del af en større kode, så man må selv lige finde de relevante dele og kopiere ud*
@@ -101,7 +97,6 @@ Runde hjørne, fuld farve rgb, lys, skærm der er synlig fra mange vinkler. kan 
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-1-47-round-rectangle-tft-display)
-
 - [Eksempelkode](https://learn.adafruit.com/adafruit-1-47-round-rectangle-tft-display/circuitpython-usage#circuitpython-library-installation-3113419)
 
 ---
@@ -117,7 +112,6 @@ Kan sende OG modtage ir signal. minder om det circuit playground express har ind
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-infrared-ir-remote-transceiver/overview)
-
 - [Eksempelkode](https://learn.adafruit.com/adafruit-infrared-ir-remote-transceiver/circuitpython#example-code-3175233)
 
 ---
@@ -134,7 +128,6 @@ Genialt driver der kan bruges på alle motorer med 2 ledninger, og gør dem mega
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-mosfet-driver)
-
 - [Eksempelkode](https://learn.adafruit.com/adafruit-mosfet-driver/circuitpython-python#example-code-3133146)
 
 ---
@@ -152,7 +145,6 @@ Du kender den nok. Det er den mest kendte motor, og det er der en grund til. Den
 
 
 - [Produkt side](https://www.adafruit.com/product/169?srsltid=AfmBOorbmKZ9DP-otstlYhx_XXqialG8IL0dqahxICMzFYD3-6oksMR8)
-
 - [Eksempelkode](https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo)
 
 ---
@@ -169,7 +161,6 @@ Følg guiden for at se hvordan ledningerne skal tilsluttes :D
 
 
 - [Official guide](https://learn.adafruit.com/adafruit-pcm510x-i2s-dac)
-
 - [Eksempelkode](https://learn.adafruit.com/adafruit-pcm510x-i2s-dac/circuitpython#wav-playback-3194610)
 
 ---
@@ -187,7 +178,6 @@ Følg guiden for at se hvordan ledningerne skal tilsluttes :D
 
 
 - [Official guide](https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp)
-
 - [Eksempelkode](https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/circuitpython-wiring-test#wave-file-2995561)
 
 ---
@@ -202,7 +192,6 @@ Neopixels er den nemmeste måde af få lys til dit projekt. De kan programmes ti
 
 
 - [Produkt side](https://www.adafruit.com/product/2541)
-
 - [Eksempelkode](https://learn.adafruit.com/circuitpython-essentials/circuitpython-neopixel)
 
 ---
@@ -220,7 +209,6 @@ Denne sensor kan meget mere, da den også har magnetometer og gyroskop, kan du b
 
 
 - [Officiel Guide](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor)
-
 - [Eksempelkode](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython#full-example-code-2998132)
 
 ---
