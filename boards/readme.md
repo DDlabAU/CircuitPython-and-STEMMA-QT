@@ -28,6 +28,7 @@ Den vilde ESP32-S3 chip på et meget lille board. Hvis du ikke har et helt beste
 - [Officiel Guide](https://learn.adafruit.com/adafruit-qt-py-esp32-s3)
 - [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/adafruit_qtpy_esp32s3_4mbflash_2mbpsram/)
 
+---
 
 ## Feather S3
 <img src="https://cdn-learn.adafruit.com/assets/assets/000/118/373/large1024/adafruit_products_FESPS3_top.jpg?1675965407" alt="Feather ESP32-S3-board" width="300"/>
@@ -54,9 +55,7 @@ Vælg den med PSRAM hvis dit projekt kræver mere hukommelse til store datasæt,
 - [CircuitPython 2MB PSRAM](https://circuitpython.org/board/adafruit_feather_esp32s3_4mbflash_2mbpsram/)
 - [CircuitPython No PSRAM](https://circuitpython.org/board/adafruit_feather_esp32s3_nopsram/)
 
-
-
-
+---
 
 ## Adalogger RP2040 Feather
 <img src="https://cdn-shop.adafruit.com/970x728/5980-00.jpg" alt="Feather RP2040 Adalogger-board" width="300"/>  
@@ -81,3 +80,4 @@ RP2040 chip med **microSD** slot
 - [Download nyeste version af CircuitPython til dette board](https://circuitpython.org/board/adafruit_feather_rp2040_adalogger/)
 - [Eksempelkode: Gem på SD](https://learn.adafruit.com/adafruit-feather-rp2040-adalogger/sd-card#sd-card-write-test-3153417)
 
+---
