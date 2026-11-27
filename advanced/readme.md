@@ -18,7 +18,7 @@ Lær hvordan du styrer output via WiFi:
 - [Opsætning og simpel tænd/sluk](https://www.youtube.com/watch?v=iFwvvEJ_UwA&list=PLBJJ76R_ry5QY9BU5gqxrvtODWFkkTjYa&index=35&t=1449s)
 - [Fortsættelse af ovenstående video med mere avanceret funktionalitet](https://www.youtube.com/watch?v=fjysAa3N2OI&list=PLBJJ76R_ry5QY9BU5gqxrvtODWFkkTjYa&index=36)
 
-<details>
+<details markdown="block">
 <summary>Kodeeksempel: Styring af NeoPixel-strip med Adafruit IO</summary>
 
 ```python
@@ -98,7 +98,7 @@ while True:
 ```
 </details>
 
-<details>
+<details markdown="block">
 <summary>settings.toml</summary>
 
 ```toml
@@ -145,7 +145,7 @@ Men denne guide omhandler CircuitPython-brug:
 3. brug koderne herunder og modificer efter dine behov
 4. husk at importere lib fx adafruit_requests
 
-<details>
+<details markdown="block">
 <summary>Kode til relæ</summary>
 
 ```python
@@ -183,7 +183,7 @@ while True:
 ```
 </details>
 
-<details>
+<details markdown="block">
 <summary>Kode til strøm data:</summary>
 
 ```python
