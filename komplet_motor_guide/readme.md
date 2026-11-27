@@ -12,6 +12,7 @@
 - [o2* — Vibration motor](#vibration-motor)
 - [Linear actuator*](#linear-actuator)
 
+---
 
 # small Solenoid
 ### ID: n0
@@ -25,6 +26,7 @@ Push/pull solenoid. Når den får strøm skubber den nogle mm fremad. Når strø
 - den røde skal til board 5v
 - den sorte skal til board GND
 
+---
 
 # Servo 180°
 ### ID: n1
@@ -38,6 +40,8 @@ Ulempen er at den kun har et range of motion på 180° og kan ikke gå over 180�
 - 3 ledninger: rød til 5V strøm, sort til GND, hvid til signal fx "A1"
 
 (hvis du bruger ekstern strømforsyning er det vigtigt at motorens sorte ledning går BÅDE til ekstern GND og board GND)
+
+---
 
 # Servo continous (360)
 ### ID: n2
@@ -53,6 +57,8 @@ Ikke ligeså alsidig, men nem at bruge og kan dreje 360 grader.
 
 (hvis du bruger ekstern strømforsyning er det vigtigt at motorens sorte ledning går BÅDE til ekstern GND og board GND)
 
+---
+
 # Simple dc motor
 ### ID: n3
 #### Key feature:
@@ -65,6 +71,8 @@ Meget hurtigt-drejende, meget svag motor. God til f.eks. en blæser. Lydlød. De
 - den røde skal til ekstern strøm IND
 - den sorte skal BÅDE til ekstern strøm GND og board GND
 
+---
+
 # Geared dc motor
 ### ID: n4
 #### Key feature:
@@ -75,6 +83,8 @@ I princippet samme type motor som dc motoren, men der sidder en gearbox der ænd
 - driveren har 3 ledninger. den hvide skal i board signal, f.eks. a1.
 - den røde skal til ekstern strøm IND
 - den sorte skal BÅDE til ekstern strøm GND og board GND
+
+---
 
 # Large Solenoid
 ### ID: n5
@@ -88,6 +98,8 @@ Push/pull solenoid. Når den får strøm skubber den med en solid kraft 2-3 cm f
 - driveren har 3 ledninger. den hvide skal i board signal, f.eks. a1.
 - den røde skal til ekstern strøm IND
 - den sorte skal BÅDE til ekstern strøm GND og board GND
+
+---
 
 # Stepper motor
 ### ID: n6
@@ -105,6 +117,8 @@ bruge denne guide til wiring:
 
 https://learn.adafruit.com/adafruit-tmc2209-stepper-motor-driver-breakout-board/circuitpython-and-python 
 
+---
+
 # Vibration motor
 ### ID: o2*
 (stemma komponent, find den ved o2)
@@ -114,6 +128,8 @@ Perfekt hvis du vil inkorporere haptisk feedback i et projekt. har over 100 fors
 Bruger denne driver:
 https://www.adafruit.com/product/2305
 Det eneste du skal er at plugge det ind i boarded med et stemma qt kabel og skrive kode. mega nemt
+
+---
 
 # Linear actuator
 #### Key feature:
@@ -125,5 +141,6 @@ Vi skriver en mere præcis guide, hvis vi køber flere.
 
 Men der skal benyttes en driver med H-bridge....
 
+---
 
 
